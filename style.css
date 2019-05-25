@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  overflow-x: hidden;
+  font-family:'Lato', sans-serif;
+  color: #505962;
+}
+
+.offset:before{
+  content:"";
+  height: 4rem;
+  margin-top: -2rem;
+
+}
+/****** Navigation--*/
+.navbar {
+  text-transform:uppercase;
+  font-weight:700;
+  font-size: .9rem;
+  letter-spacing:.1rem;
+  background: rgba(0,0,0,0.6) !important;
+}
+
+.navbar-brand img{
+  height:2rem;
+}
+
+.navbar-nav li{
+  padding-right: .7rem:
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  padding-top: .8rem;
+}
+
+.navbar-dark.navbar-nav .nav-link .active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#A52A2A;
+}
+
+/*==========Carousel======*/
+.carousel-inner img{
+  width:100%;
+  height: 100%;
+}
+.carousel-caption{
+  position:absolute;
+  top:60%;
+  transform:translatey(-50%);
+  padding-bottom: -500px;
+}
+
+.carousel-caption h1{
+  font-size:500%;
+  text-transform: uppercase;
+  font-family: 'Lobster', cursive;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h1 span{
+  color:#8B0000;
+}
+
+
+.carousel-caption h3{
+  font-family: 'Kaushan Script', cursive;
+  font-size:200%;
+  font-weight:500;
+  text-shadow: 1px 1px 15px #000;
+  padding-bottom: 3rem;
+}
+
+
+.btn-danger{
+  background-color: #8B0000;
+  border: 1px solid #8B0000;
+
+}
+
+.btn-primary:hover{
+  background-color: #563d7c;
+  border:1px solid #8B0000;
+}
+
+/*==========About page=============*/
+.py-5 {
+    padding-top: .1rem!important;
+}
+
+.about-pictures{
+  position: relative;
+}
+
+.about-image{
+  position: absolute;
+  width:150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-1{
+  left:0%;
+  top:0%;
+}
+.img-2{
+  left:20%;
+  top:20%;
+  z-index:10;
+}
+.img-3{
+  left:40%;
+  top:45%;
+  z-index:20;
+}
+.img-4{
+  left:40%;
+  top:0%;
+}
+.img-5{
+  left:0%;
+  top:45%;
+}
+.about-image:hover{
+  outline:10px solid #d3325f;
+  outline-offset:0.8rem;
+  transform: scale(1.3) rotate(20deg);
+  z-index:30;
+  opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+  opacity: 0.5;
+}
+
+.dixplay-3{
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+
+
+/*=======Landing page=======*/
+.caption{
+  width:100%;
+  max-width: 100%;
+  position:absolute;
+  top: 38%;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px solid black;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom:1rem;
+}
+.caption h4{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding-left: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/**==Service===*/
+.narrow{
+  width:75%;
+  margin:2.15rem auto;
+  padding-top: 8rem;
+}
+.narrow h1{
+  font-size:2.4rem;
+  text-transform: uppercase;
+}
+
+.btn-secondary{
+  border-width: medium;
+  border-radius:0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2 rem;
+  margin: 1rem;
+  color: white;
+  background-color: #8B0000;
+  border-color: #DEB887;
+}
+
+.btn-secondary:hover{
+  background-color: #189582;
+  border-color: #189582;
+}
+.btn-lg{
+  text-transform: uppercase;
+  font-weight: 60px
+}
+
+/*Project section**/
+.box{
+  position: relative;
+  width:100%;
+  height:400px;
+  overflow:hidden;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  transition:.5s;
+}
+.box:hover{
+  transform: translateY(-30px);
+  box-shadow: 0 50px 50px rgba(0,0,0,.5);
+}
+
+.box .imgBox{
+  position: relative;
+  width: 100%;
+}
+
+.box .imgBox img{
+  transition:.5s;
+}
+
+.box:hover .imgBox img{
+  opacity:.5s;
+  transform:translateY(-40px);
+}
+.box .content{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 20px;
+  box-sizing:border-box;
+  transition:.5s;
+  opacity: 0;
+}
+.box:hover .content{
+  opacity:1;
+}
+
+.box .content h3{
+  font-size: 38px;
+  color:#8B0000;
+  font-weight:400;padding-top: 3rem;
+}
+.box .content p{
+  font-size: 18px;
+  color:#fff;
+  font-weight:400;
+}
+.box .content .btnD{
+  border:none;
+  background: #fe1b70;
+  color: #fff;
+  font-size: 10px 20px;
+  font-weight: 700;
+  transition:.5s;
+}
+.box .content .btnD:hover{
+background: #DEB887;
+color:#696969;
+}
+
+/*--- Features---*/
+.jumbotron{
+  margin-bottom:0;
+  padding:2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading{
+  font-size:1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: #8B0000;
+  margin:0 auto 2rem;
+
+}
+
+/*Our Team*/
+.fixed{
+  background-image: url('img/sciweb.jpg');
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding:7rem 2rem;
+}
+
+.fixed-background h3{
+  margin-bottom: 2rem;
+}
+
+.fixed-background p{
+  margin-top: 1.5rem;
+}
+
+
+/**The team section**/
+.modal-body{
+  color:black;
+}
+.card-img-top{
+ border-radius: 50%;
+
+}
+#bor{
+  border-right: none;
+}
+
+h1{
+text-transform: uppercase;
+}
+
+
+h4{
+font-family: 'Times New Roman';
+}
+
+.modal-title{
+  color:black;
+}
+
+.card-img-top {
+  transition: transform .2s; /* Animation */
+  width: 250px;
+  height: 200px
+}
+
+.card-img-top:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  padding-left: 15px;
+}
+/***Contack */
+.fixed-b{
+  background-image: url('img/computers.png');
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding:1rem 2rem;
+}
+
+.fixed-background h3{
+  margin-bottom: 2rem;
+}
+
+.fixed-background p{
+  margin-top: 1.5rem;
+}
+
+.fa-phone{
+    color: green;
+  }
+
+  .fa-envelope{
+    color:red;
+  }
+
+.social svg.svg-inline--fa{
+  transition: transform .2s; /* Animation */
+  font-size:5rem;
+  margin:1.2rem .5rem 0 0;
+  margin-bottom: 5;
+  color: white;
+}
+.social svg.svg-inline--fa:hover{
+color :#8B0000 !important;
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5);
+padding-left: 8px;
+}
+
+/***======= Service Section*======*/
+.single-service{
+  border:1px solid #ebebeb;
+  text-align: center;
+  background: lightgray;
+}
+.service-bg{
+  height: 200px;
+  position:relative;
+}
+.service-bg-1{
+  width:100%;
+  background: url("img/img4.jpeg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center;
+}
+.service-bg-2{
+  width:100%;
+  background: url("img/img5.jpeg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center;
+}
+.service-bg-3{
+  width:100%;
+  background: url("img/img3.jpg");
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-bg h2{
+  color:#fff;
+  background: tomato;
+  border:1px solid tomato;
+  font-size: 17px;
+  font-weight: 700;
+  padding:15px;
+  position:absolute;
+  left:8%;
+  width: 84%;
+  margin: 0;
+  bottom: -25px;
+  border-radius:50px;
+  letter-spacing:2px;
+}
+.single-service:hover .service-bg h2{
+  background-color: #fff;
+  transition:.9s;
+  color:tomato;
+}
+.service-text{
+  padding:50px 30px 20px;
+  font-size: 15px;
+  font-weight:400;
+}
+.service-text p:last-child{
+  margin: 0;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+/****footer**/
+footer{
+  background-color:rgba(0,0,0,0.3)!important;;
+  color: white;
+  padding: -15rem 0 2rem;
+  margin-top:-50;
+}
+
+hr.socket{
+  width: 30%;
+  border-top: 1rem solid #8B0000;
+  margin-top: 3rem;
+}
+small{
+  color: #8B0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----Media queries--*/
+@media (max-width: 767px){
+  .caption h1{
+    font-size:2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom:.5rem;
+  }
+  .caption h4{
+    font-size: 1.2rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .btn-lg{
+    padding-left: .6rem 1.3rem;
+    font-size: 1.1rem;
+  }
+  .narrow h1{
+    font-size:1.5;
+  }
+  .clients img{
+    max-width: 50%;
+    display:block;
+    margin:0 auto;
+  }
+
+  /***service**/
+  .single-service{
+    margin-top: 30px;
+  }
+  .service-bg h2{
+    font-size:13px;
+  }
+
+  .social {
+    font-size: 200%;
+  }
+}
+
+
+
+/****** Media queries my caroussel*******/
+@media (max-width: 992px){
+  .carousel-indicators {
+    display:none;
+  }
+}
+
+@media (max-width:768px){
+  .carousel-caption{
+    top:45%;
+  }
+
+  .carousel-caption h1{
+    font-size:300%;
+  }
+
+  .carousel-caption h3{
+    font-size:140%;
+    font-weight:400;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size:95%;
+    padding:8px 14px;
+  }
+  .carousel-indicators {
+    display:none;
+  }
+
+  .social{
+    font-size: 200%;
+  }
+
+  .social svg.svg-inline--fa{
+    font-size: 300%;
+  }
+
+
+}
+
+@media (max-width:650px){
+
+  .carousel-caption{
+    top:70%;
+  }
+
+  .carousel-caption h1{
+    font-size:250%;
+  }
+
+  .carousel-caption h3{
+    font-size:110%;
+
+  }
+
+  .carousel-caption .btn {
+    font-size:90%;
+    padding:4px 8px;
+  }
+  .carousel-indicators {
+    display:none;
+  }
+
+  /**service*/
+  .narrow h1 {
+    font-size: 150%;
+  }
+  .btn{
+    font-size: 90%;
+  }
+
+  }
+  .display-3{
+    font-size:250%;
+    text-transform: uppercase;
+  }
+
+  .social{
+    font-size: 500%;
+  }
+
+  .social svg.svg-inline--fa{
+    font-size: 60%;
+  }
+}
+
+@media (max-width:450px){
+
+  .carousel-caption{
+    top:46%;
+  }
+
+  .carousel-caption h1{
+    font-size:180%;
+  }
+
+  .carousel-caption h3{
+    font-size:80%;
+
+  }
+
+  .carousel-caption .btn {
+    font-size:30%;
+    padding:4px 8px;
+  }
+  .carousel-indicators {
+    display:none;
+  }
+
+  /**service*/
+  .narrow h1 {
+    font-size: 100%;
+  }
+  .btn{
+    font-size: 60%;
+  }
+
+  .social svg.svg-inline--fa{
+    font-size: 50%;
+  }
+  .display-3{
+    font-size:250%;
+    text-transform: uppercase;
+  }
+
+  /*project*/
+  .box .imgBox img{
+    transition:.5s;
+  }
+}
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
