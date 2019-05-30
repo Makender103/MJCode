@@ -1,4 +1,1 @@
 # SCINNOB
-
-
-vtydtfghjhndrftgmhkn
