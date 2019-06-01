@@ -1,0 +1,8 @@
+
+CREATE TABLE Contact(
+	ID INT(11) AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(50),
+	email VARCHAR(50),
+	message VARCHAR(500);
+
+);
