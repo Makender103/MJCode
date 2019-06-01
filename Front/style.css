@@ -371,6 +371,25 @@ font-family: 'Times New Roman';
   .fa-envelope{
     color:red;
   }
+/*modal footer*/
+  .social-footer{
+    /*background-color: black;*/
+  }
+
+  .modal-footer svg.svg-inline--fa{
+  transition: transform .2s; /* Animation */
+  font-size:5rem;
+  margin:1.2rem .5rem 0 0;
+  margin-bottom: 5;
+  color: white;
+}
+.modal-footer svg.svg-inline--fa:hover{
+color :#8B0000 !important;
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.5);
+padding-left: 8px;
+}
 
 .social svg.svg-inline--fa{
   transition: transform .2s; /* Animation */
