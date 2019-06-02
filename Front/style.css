@@ -281,10 +281,10 @@ h3.heading{
 }
 
 .heading-underline{
-  width: 3rem;
+  width: 5rem;
   height: .2rem;
   background-color: #8B0000;
-  margin:0 auto 2rem;
+  margin:0 auto 1.5rem;
 
 }
 
@@ -309,6 +309,9 @@ h3.heading{
 
 
 /**The team section**/
+.modal-header{
+  background-color: #8B0000;
+}
 .modal-body{
   color:black;
 }
@@ -330,7 +333,7 @@ font-family: 'Times New Roman';
 }
 
 .modal-title{
-  color:black;
+  color:white;
 }
 
 .card-img-top {
@@ -372,18 +375,14 @@ font-family: 'Times New Roman';
     color:red;
   }
 /*modal footer*/
-  .social-footer{
-    /*background-color: black;*/
-  }
-
-  .modal-footer svg.svg-inline--fa{
+.m-footer svg.svg-inline--fa{
   transition: transform .2s; /* Animation */
-  font-size:5rem;
-  margin:1.2rem .5rem 0 0;
-  margin-bottom: 5;
-  color: white;
+  margin:0rem 1.5rem 0 0;
+  margin-bottom: 1;
+
 }
-.modal-footer svg.svg-inline--fa:hover{
+
+.m-footer svg.svg-inline--fa:hover{
 color :#8B0000 !important;
 -ms-transform: scale(1.5); /* IE 9 */
 -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -391,6 +390,7 @@ transform: scale(1.5);
 padding-left: 8px;
 }
 
+/*social*/
 .social svg.svg-inline--fa{
   transition: transform .2s; /* Animation */
   font-size:5rem;
@@ -479,14 +479,16 @@ padding-left: 8px;
 footer{
   background-color:rgba(0,0,0,0.3)!important;;
   color: white;
-  padding: -15rem 0 2rem;
-  margin-top:-50;
+  padding: -10rem;
+}
+.row .justify-content-center footer{
+  padding: -10rem;
 }
 
 hr.socket{
   width: 30%;
   border-top: 1rem solid #8B0000;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 small{
   color: #8B0000;
