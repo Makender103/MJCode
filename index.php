@@ -1,3 +1,46 @@
+<?php
+include_once'Includes/connection.php';
+$Count_NameErr = $Count_emailErr, $CountMessErr = 0;
+
+if (isset($_POST['Send'])) {
+
+
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $service = $_POST['service'];
+    $message = $_POST['message'];
+
+    if (empty($name)) {
+        $NameErr = 'Please enter your name';
+        $Count_NameErr++;
+    } else if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+        $NameErr = "Only letters and white space allowed";
+        $Count_NameErr++;
+    }
+
+    if (empty($email)) {
+        $emailErr = 'Please Enter your email';
+        $Count_emailErr++;
+    }
+    else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+        $Count_emailErr++;
+    }
+
+    if(empty($message)) {
+        $messErr = 'Please write your message';
+        $CountMessErr++;
+    }
+
+
+
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -511,23 +554,43 @@
 	<div class="container contact_form">
 	<div class="row">
 			<div class="col-lg-6">
-				<form>
+				<form action="" method="post">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>+(55) 49 ... ... ...</h4>
 							<div class="tex-form">
-								<input type="text" class="form-control" placeholder="Your Name" required=""><br>
-									<input type="email" class="form-control" placeholder="Enter Your Email" required="">
+								<input type="text" class="form-control" placeholder="Your Name" name="name" >
+								<span>
+                                    <?php
+                                        if($Count_NameErr > 0) {
+                                            echo $NameErr;
+                                        }
+
+								    ?>
+                                </span><br><br>
+                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email">
+                                <span>
+                                    <?php
+                                    if($Count_emailErr > 0) {
+                                        echo $emailErr;
+                                    }
+
+                                    ?>
+                                </span><br>
 							</div>
 
 						<div class="checkbox">
 								<div class="radio">
 									<label>
-										<input type="radio">     Web Dev
+										<input type="radio" name="service"  value="W">     Web Dev <br>
 									</label>
 
 									<label>
-										<input type="radio" >    Mobile Dev
+										<input type="radio" name="service"  value="M" >    Mobile Dev <br>
+									</label>
+
+									<label>
+										<input type="radio" name="service"  value="W">    Both
 									</label>
 								</div>
 						</div>
@@ -539,9 +602,17 @@
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
 				<h4>Scinnob@scinob.com</h4>
 				<div class="form-group">
-					 <textarea class="form-control" rows="5" placeholder="share your project with us" required=""></textarea>
-				</div>
-				<button type="submit" class="btn btn-danger pull-right">Send Email</button>
+					 <textarea class="form-control" rows="5" placeholder="share your project with us"></textarea>
+                    <span>
+                                    <?php
+                                    if($CountMessErr > 0) {
+                                        echo $messErr;
+                                    }
+
+                                    ?>
+                                </span><br>
+                </div>
+				<button type="submit" class="btn btn-danger pull-right" name="Send" value="Send">Send Email</button>
 			</div>
 
 
