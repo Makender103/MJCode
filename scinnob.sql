@@ -3,8 +3,8 @@ CREATE TABLE scinnob_Contact (
   name VARCHAR(50) NOT NULL, 
   email VARCHAR(50) NOT NULL, 
   message TEXT, 
-  ser_Web BOOLEAN DEFAULT FALSE, 
-  ser_Mobile BOOLEAN DEFAULT FALSE, 
-  ser_both BOOLEAN DEFAULT FALSE
+  service VARCHAR(50)
   
 );
+
+

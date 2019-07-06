@@ -1,6 +1,6 @@
 <?php
 include_once'Includes/connection.php';
-$Count_NameErr = $Count_emailErr, $CountMessErr = 0;
+$Count_NameErr = $Count_emailErr = $CountMessErr = $serErr = 0;
 
 if (isset($_POST['Send'])) {
 
@@ -32,7 +32,14 @@ if (isset($_POST['Send'])) {
         $CountMessErr++;
     }
 
+    if(!isset($service)){
+        $ser = 'Please check an option';
+        $serErr++;
+    }
 
+    if($CountMessErr <= 0 and $Count_emailErr <=0 and $Count_NameErr <= 0 and $serErr <= 0){
+        
+    }
 
 }
 
@@ -554,7 +561,7 @@ if (isset($_POST['Send'])) {
 	<div class="container contact_form">
 	<div class="row">
 			<div class="col-lg-6">
-				<form action="" method="post">
+				<form action="" method="post" enctype="multipart/form-data">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>+(55) 49 ... ... ...</h4>
@@ -580,19 +587,26 @@ if (isset($_POST['Send'])) {
 							</div>
 
 						<div class="checkbox">
-								<div class="radio">
+								<div class="radio"  >
 									<label>
-										<input type="radio" name="service"  value="W">     Web Dev <br>
+										<input type="radio" name="service"  value="Web" <?php if ($service == "Web"){print "checked";}?>>     Web<br>
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="M" >    Mobile Dev <br>
+										<input type="radio" name="service"  value="Mobile" <?php if ($service == "Mobile"){print "checked";}?>>    Mobile<br>
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="W">    Both
+										<input type="radio" name="service"  value="Both" <?php if ($service == "Both"){print "checked";}?>>    Both
 									</label>
-								</div>
+								</div><span>
+                                    <?php
+                                    if($serErr > 0) {
+                                        echo $ser;
+                                    }
+
+                                    ?>
+                                </span>
 						</div>
 
 			</div>
@@ -602,7 +616,7 @@ if (isset($_POST['Send'])) {
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
 				<h4>Scinnob@scinob.com</h4>
 				<div class="form-group">
-					 <textarea class="form-control" rows="5" placeholder="share your project with us"></textarea>
+					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message"></textarea>
                     <span>
                                     <?php
                                     if($CountMessErr > 0) {
