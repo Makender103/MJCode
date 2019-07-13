@@ -27,19 +27,49 @@ $response = mysqli_query($connect,$query);
 
   <title>SCINNOB - Blog</title>
   <link rel="icon" href="img/logo.png">
+  <style type="text/css">
+     .nav{padding: 20px; background: yellow;}
+     #addAdm{
+        font-size: 34px;
+    }
+  </style>
 
 </head>
 <body>
-  <div container="">
-        <nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand text-center" href="#">MJR_TEC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto active">
+      <li class="nav-item">
+        <a><ion-icon name="add-circle" id="addAdm"></ion-icon></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="www.mjtec.com">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Name of ADM</a>
+      </li>
+      <li class="nav-item">
+        <a><ion-icon name="return-right" id="addAdm"></ion-icon></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
           <div>
              <h3 class="text-center">LIST OF CONTACT</h3>
           </div>
-        </nav>
 
         <table class="table">
+
         <thead class="thead-dark">
           <tr>
+
             <th scope="col">ID</th>
             <th scope="col">NAME</th>
             <th scope="col">EMAIL</th>
@@ -62,8 +92,7 @@ $response = mysqli_query($connect,$query);
             </tr>
           <?php }?>
         </tbody>
-      </table>
-</div>
+      </table>    
 
 </body>
 </html>
