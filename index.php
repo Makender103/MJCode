@@ -1,5 +1,6 @@
 <?php
 include_once'Includes/connection.php';
+include_once'Includes/header.php';
 $Count_NameErr = $Count_emailErr = $CountMessErr = $serErr = 0;
 
 if (isset($_POST['Send'])) {
@@ -38,6 +39,8 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr <= 0 and $Count_emailErr <=0 and $Count_NameErr <= 0 and $serErr <= 0){
+    	$query = "INSERT INTO scinnob_Contact(name, email, message, service) values ('$name','$email', '$message','$service')";
+       	mysqli_query($connect, $query);
         
     }
 
@@ -46,32 +49,6 @@ if (isset($_POST['Send'])) {
 
 
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-
-	<!--animation scroll script-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bokor|Kaushan+Script" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-
-	<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/fixed.css">
-</head>
-
-
-	<title>SCINNOB - Blog</title>
-	<link rel="icon" href="img/logo.png">
-
-</head>
 
 <body data-spy="scroll" data-target="navbarResponsive">
 
