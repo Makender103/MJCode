@@ -38,7 +38,16 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr <= 0 and $Count_emailErr <=0 and $Count_NameErr <= 0 and $serErr <= 0){
-        
+
+
+        $query = "INSERT INTO scinnob_Contact(name, email, message, service) values ('$name','$email', '$message','$service')";
+       mysqli_query($connect, $query);
+       
+
+
+
+
+
     }
 
 }
@@ -597,7 +606,7 @@ if (isset($_POST['Send'])) {
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="Both" <?php if ($service == "Both"){print "checked";}?>>    Both
+										<input type="radio" name="service"  value="Web and Mobile" <?php if ($service == "Web and Mobile"){print "checked";}?>>    Both
 									</label>
 								</div><span>
                                     <?php
@@ -626,7 +635,8 @@ if (isset($_POST['Send'])) {
                                     ?>
                                 </span><br>
                 </div>
-				<button type="submit" class="btn btn-danger pull-right" name="Send" value="Send">Send Email</button>
+				<input type="submit" class="btn btn-success pull-right" name="Send" value="Send"></br>
+
 			</div>
 
 
