@@ -1,20 +1,20 @@
 <?php
 include_once'Includes/connection.php';
+include_once'Includes/header.php';
 $Count_NameErr = $Count_emailErr = $CountMessErr = $serErr = 0;
 
 if (isset($_POST['Send'])) {
 
-
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $service = $_POST['service'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $message = $_POST['message'];
+    $service = ($_POST['service'])? $_POST['service']:'B';
 
     if (empty($name)) {
         $NameErr = 'Please enter your name';
         $Count_NameErr++;
     } else if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
-        $NameErr = "Only letters and white space allowed";
+        $NameErr = 'Only letters and white space allowed';
         $Count_NameErr++;
     }
 
@@ -23,7 +23,7 @@ if (isset($_POST['Send'])) {
         $Count_emailErr++;
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $emailErr = "Invalid email format";
+        $emailErr = 'Invalid email format';
         $Count_emailErr++;
     }
 
@@ -36,51 +36,15 @@ if (isset($_POST['Send'])) {
         $ser = 'Please check an option';
         $serErr++;
     }
-
-    if($CountMessErr <= 0 and $Count_emailErr <=0 and $Count_NameErr <= 0 and $serErr <= 0){
-
-
-        $query = "INSERT INTO scinnob_Contact(name, email, message, service) values ('$name','$email', '$message','$service')";
-       mysqli_query($connect, $query);
-       
-
-
-
-
-
+    
+    if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
+        echo $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
+        mysqli_query($connect, $query);
     }
 
 }
 
-
-
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-
-	<!--animation scroll script-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bokor|Kaushan+Script" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-
-	<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/fixed.css">
-</head>
-
-
-	<title>SCINNOB - Blog</title>
-	<link rel="icon" href="img/logo.png">
-
-</head>
 
 <body data-spy="scroll" data-target="navbarResponsive">
 
@@ -581,7 +545,6 @@ if (isset($_POST['Send'])) {
                                         if($Count_NameErr > 0) {
                                             echo $NameErr;
                                         }
-
 								    ?>
                                 </span><br><br>
                                 <input type="email" class="form-control" placeholder="Enter Your Email" name="email">
@@ -598,15 +561,15 @@ if (isset($_POST['Send'])) {
 						<div class="checkbox">
 								<div class="radio"  >
 									<label>
-										<input type="radio" name="service"  value="Web" <?php if ($service == "Web"){print "checked";}?>>     Web<br>
+										<input type="radio" name="service"  value="W">     Web<br>
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="Mobile" <?php if ($service == "Mobile"){print "checked";}?>>    Mobile<br>
+										<input type="radio" name="service"  value="M">    Mobile<br>
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="Web and Mobile" <?php if ($service == "Web and Mobile"){print "checked";}?>>    Both
+										<input type="radio" name="service"  value="B">    Both
 									</label>
 								</div><span>
                                     <?php
@@ -635,7 +598,7 @@ if (isset($_POST['Send'])) {
                                     ?>
                                 </span><br>
                 </div>
-				<input type="submit" class="btn btn-success pull-right" name="Send" value="Send"></br>
+				<input type="submit" class="btn btn-success pull-right" name="Send"></br>
 
 			</div>
 

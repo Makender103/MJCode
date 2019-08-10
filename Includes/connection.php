@@ -1,8 +1,8 @@
 <?php
-$host = "sql312.epizy.com";
-$user = "epiz_24152290";
-$senha = "VQvmlNUZaZ";
-$database = "epiz_24152290_SCINNOB";
+$host = "localhost";
+$user = "root";
+$senha = "";
+$database = "SCINNOB";
 $connect = mysqli_connect($host, $user, $senha, $database) or
 die("Error to connect.");
 mysqli_query($connect, "SET NAMES 'utf8'");
