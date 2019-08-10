@@ -3,6 +3,8 @@
     $user = $_POST['username'];
     $pswd = $_POST['passwoerd'];
 
+    echo testes;exit;
+
 }
 
 
