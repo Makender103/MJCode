@@ -9,6 +9,7 @@ if (isset($_POST['Send'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
     $service = ($_POST['service'])? $_POST['service']:'B';
+    $date = date("Y-m-d h:i:s");
 
     if (empty($name)) {
         $NameErr = 'Please enter your name';
@@ -33,7 +34,7 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
-        $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
+        $query = "INSERT INTO scinnob_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
         mysqli_query($connect, $query);
     }
 

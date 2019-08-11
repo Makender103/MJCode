@@ -1,7 +1,7 @@
 <?php
 include_once'../Includes/connection.php'; 
 
-$sql = "SELECT  id, name, email, message, service FROM scinnob_Contact";
+$sql = "SELECT  id, name, email, message, service, clock FROM scinnob_Contact";
 $response = mysqli_query($connect, $sql);
 
 ?>
@@ -74,6 +74,7 @@ $response = mysqli_query($connect, $sql);
             <th scope="col">EMAIL</th>
             <th scope="col">SERVICE</th>
              <th scope="col">MESSAGE</th>
+             <th scope="col">DATE</th>
             <th scope="col">OPTION</th>
           </tr>
         </thead>
@@ -96,6 +97,7 @@ $response = mysqli_query($connect, $sql);
               <td><?php echo $value['email']?></td>
               <td><?= $service ?></td>
               <td><?php echo $value['message']?></td>
+              <td><?php echo $value['clock']?></td>
               <td>
                 <ion-icon data-toggle="tooltip" name="create" data-placement="right">Answer</ion-icon>
               </td>
