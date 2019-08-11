@@ -45,7 +45,7 @@ $response = mysqli_query($connect, $sql);
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto active">
       <li class="nav-item">
-        <a><ion-icon name="add-circle" id="addAdm" href="sign_up.php">></ion-icon></a>
+        <a href="sign_up.php"><ion-icon name="add-circle" id="addAdm"></ion-icon></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>

@@ -25,7 +25,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
 
                         <form id="log" action="" method="post" enctype="multipart/form-data">
-                        <h1>MJTEC - Sign Up</h1>
+                        <h1>MJTEC - Add New ADM</h1>
                         <img class="card-img-top img img-responsive" src="img/t4.gif">
 
                           <div class="form-group">
