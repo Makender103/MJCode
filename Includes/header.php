@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/fixed.css">
 
 
-	<title>SCINNOB - Blog</title>
+	<title>MJ_TECH - Blog</title>
 	<link rel="icon" href="img/logo.png">
 
 </head>

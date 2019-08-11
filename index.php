@@ -43,11 +43,21 @@ if (isset($_POST['Send'])) {
 
 <body data-spy="scroll" data-target="navbarResponsive">
 
+  <!--__________Preloader__________-->
+    <div class="loader-wrapper">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+
+
 <!--Home section-->
 <div id="home">
 	<!--Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><img src="img/logo.png">SCINNOB</a>
+  <a class="navbar-brand" href="#"><img src="img/logo.png">MJ_Tech</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
 	 data-target="#navbarResponsive" >
     <span class="navbar-toggler-icon"></span>
@@ -91,7 +101,7 @@ if (isset($_POST['Send'])) {
 				      <img src="img/slide.jpg" class="d-block w-100" alt="...">
 							<div class="carousel-caption">
 								<h1 class="display-2 animated bounceInRight" style="animation-delay:1s">
-									<span>SCIN</span>NOB</h1>
+									<span>MJ_</span>TECH</h1>
 								<h3 class="animated bounceInLeft" style="animation-delay:2s">The Technology that simplifies your life</h3>
 								<a href="#service">
 									<button type="button" class="btn btn-outline-light btn-lg animated zoomIn"
@@ -142,7 +152,7 @@ if (isset($_POST['Send'])) {
 
 		<div class="col-md-8 my-4 animated fadeInUp" style="animation-delay:1s" >
 			<h1 class=" display-3" >Intro</h1>
-			<h5 class="text-muted" >Scinnob specializes in Web development and mobile applications,
+			<h5 class="text-muted" >MJ_tech specializes in Web development and mobile applications,
 															customized and tailored to your needs.
 
 													<p>we work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
@@ -284,7 +294,7 @@ if (isset($_POST['Send'])) {
 		<div class="row dark text-center">
 
 			<div class="col-12">
-				<h3 class="heading">The SCINNOB Team</h3>
+				<h3 class="heading">The MJ_TECH LEAD</h3>
 				<div class="heading-underline"></div>
 			</div>
 			<!--Cards-->
@@ -527,7 +537,7 @@ if (isset($_POST['Send'])) {
 
 			<div class="col-lg-6">
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
-				<h4>Scinnob@scinob.com</h4>
+				<h4>admin@mj_tech.com</h4>
 				<div class="form-group">
 					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
                     <span class="span">
@@ -611,7 +621,12 @@ if (isset($_POST['Send'])) {
 </script>
 
 <!--- End of Script Source Files -->
+<script>
+			setTimeout(function(){
+				$('.loader-wrapper').fadeToggle();
 
+			}, 1500);
+</script>
 
 </body>
 </html>
