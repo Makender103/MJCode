@@ -39,10 +39,7 @@ if (isset($_POST['Send'])) {
     
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
         $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
-        if(mysqli_query($connect, $query))]{
-        	echo "Enviado com sucesso!";
-        }
-       
+        mysqli_query($connect, $query);
     }
 
 }
