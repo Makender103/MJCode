@@ -1,5 +1,6 @@
 CREATE database SCINNOB
 use SCINNOB
+
 CREATE TABLE scinnob_Contact (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,  
   name VARCHAR(50) NOT NULL, 
@@ -18,15 +19,8 @@ CREATE TABLE add_adm(
   	password  VARCHAR(255) NOT NULL
 )
 
-CREATE TABLE adm_login(
-	id INTEGER AUTO_INCREMENT PRIMARY KEY, 
-	username VARCHAR(50) NOT NULL,
-	password VARCHAR(50) NOT NULL,
-	
-)
+INSERT INTO add_adm (name, email, username, password) VALUES ('mjtec', 'mjtec@mjtec.com', 'mjtec2019', 'mjtec')
 
-ALTER TABLE adm_login ADD CONSTRAINT idAdd_Adm
-FOREIGN KEY (idAdd_Adm) REFERENCES add_adm(id)
 
 
 
