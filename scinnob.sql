@@ -1,11 +1,12 @@
-create database SCINNOB
+CREATE database SCINNOB
 use SCINNOB
 CREATE TABLE scinnob_Contact (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,  
   name VARCHAR(50) NOT NULL, 
   email VARCHAR(50) NOT NULL, 
   message TEXT, 
-  service ENUM('W','M','B')
+  service ENUM('W','M','B'),
+  clock date
   
 );
 
