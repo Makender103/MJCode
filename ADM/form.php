@@ -1,12 +1,31 @@
 <?php
+include_once'../Includes/connection.php';
+
   if(isset($_POST['login'])){
     $user = $_POST['username'];
-    $pswd = $_POST['passwoerd'];
+    $pswd = $_POST['password'];
 
-    echo testes;exit;
-
-}
-
+    if (empty($pswd) || empty($user)) {
+       echo "<script>alert('Please, fill the blank space')</script>";
+    }
+    else{
+      $sql = "SELECT username, password FROM adm_login WHERE username = '$user' AND password = '$pswd'";
+      $res = mysqli_query($connect, $sql);
+      if (mysqli_num_rows($res)  == 0) {
+          echo "<script>alert('Login not found')</script>";
+          header("Location: form.php");
+      }
+      else{
+        $row = mysqli_fetch_array($res);
+        //$psw = md5($pswd);
+        if ($row['password'] == $pswd) {
+          session_start();
+          header("Location: index.php");
+        }
+      }
+    }
+    
+  }
 
 ?>
 
@@ -35,7 +54,7 @@
           <div class="col md-4 col-sm-4 col-xs-12">
 
 
-              <form id="log">
+              <form id="log" action="" method="post" enctype="multipart/form-data">
               <h1>MJTEC-ADM</h1>
               <img class="card-img-top img img-responsive" src="img/t4.gif">
 
