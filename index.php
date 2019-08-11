@@ -38,7 +38,7 @@ if (isset($_POST['Send'])) {
     }
     
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
-        echo $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
+        $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
         mysqli_query($connect, $query);
     }
 
