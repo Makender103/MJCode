@@ -32,12 +32,7 @@ if (isset($_POST['Send'])) {
         $CountMessErr++;
     }
 
-    if(!isset($service)){
-        $ser = 'Please check an option';
-        $serErr++;
-    }
-
-    if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
+    if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
         $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
         mysqli_query($connect, $query);
     }
@@ -493,7 +488,7 @@ if (isset($_POST['Send'])) {
 						<h4>+(55) 49 ... ... ...</h4>
 							<div class="tex-form">
 								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?php isset($_POST['name'])? $_POST['name']: '' ?>">
-								<span>
+								<span class="span">
                                     <?php
                                         if($Count_NameErr > 0) {
                                             echo $NameErr;
@@ -501,7 +496,7 @@ if (isset($_POST['Send'])) {
 								    ?>
                                 </span><br><br>
                                 <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?php isset($_POST['email'])? $_POST['email']: '' ?>">
-                                <span>
+                                <span class="span">
                                     <?php
                                     if($Count_emailErr > 0) {
                                         echo $emailErr;
@@ -524,14 +519,7 @@ if (isset($_POST['Send'])) {
 									<label>
 										<input type="radio" name="service"  value="B" checked="">    Both
 									</label>
-								</div><span>
-                                    <?php
-                                    if($serErr > 0) {
-                                        echo $ser;
-                                    }
-
-                                    ?>
-                                </span>
+								</div>
 						</div>
 
 			</div>
@@ -542,7 +530,7 @@ if (isset($_POST['Send'])) {
 				<h4>Scinnob@scinob.com</h4>
 				<div class="form-group">
 					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
-                    <span>
+                    <span class="span">
                                     <?php
                                     if($CountMessErr > 0) {
                                         echo $messErr;
