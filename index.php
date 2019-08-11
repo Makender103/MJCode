@@ -36,10 +36,13 @@ if (isset($_POST['Send'])) {
         $ser = 'Please check an option';
         $serErr++;
     }
-
+    
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
         $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
-        mysqli_query($connect, $query);
+        if(mysqli_query($connect, $query))]{
+        	echo "Enviado com sucesso!";
+        }
+       
     }
 
 }
@@ -48,20 +51,11 @@ if (isset($_POST['Send'])) {
 
 <body data-spy="scroll" data-target="navbarResponsive">
 
-  <!--__________Preloader__________-->
-			<div class="loader-wrapper">
-			<div class="loader">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			</div>
-
 <!--Home section-->
 <div id="home">
 	<!--Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><img src="img/logo.png">MJ_Tech</a>
+  <a class="navbar-brand" href="#"><img src="img/logo.png">SCINNOB</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
 	 data-target="#navbarResponsive" >
     <span class="navbar-toggler-icon"></span>
@@ -105,7 +99,7 @@ if (isset($_POST['Send'])) {
 				      <img src="img/slide.jpg" class="d-block w-100" alt="...">
 							<div class="carousel-caption">
 								<h1 class="display-2 animated bounceInRight" style="animation-delay:1s">
-									<span>MJ_</span>TECH</h1>
+									<span>SCIN</span>NOB</h1>
 								<h3 class="animated bounceInLeft" style="animation-delay:2s">The Technology that simplifies your life</h3>
 								<a href="#service">
 									<button type="button" class="btn btn-outline-light btn-lg animated zoomIn"
@@ -156,7 +150,7 @@ if (isset($_POST['Send'])) {
 
 		<div class="col-md-8 my-4 animated fadeInUp" style="animation-delay:1s" >
 			<h1 class=" display-3" >Intro</h1>
-			<h5 class="text-muted" >MJ_TECH specializes in Web development and mobile applications,
+			<h5 class="text-muted" >Scinnob specializes in Web development and mobile applications,
 															customized and tailored to your needs.
 
 													<p>we work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
@@ -298,14 +292,14 @@ if (isset($_POST['Send'])) {
 		<div class="row dark text-center">
 
 			<div class="col-12">
-				<h3 class="heading">The MJ_Tech  Team</h3>
+				<h3 class="heading">The SCINNOB Team</h3>
 				<div class="heading-underline"></div>
 			</div>
 			<!--Cards-->
 <div class="container-fluid padding">
 <div class="row padding"  data-aos-offset="150">
 
-	<div class="col-md-6" id="bor" data-aos="zoom-out-up" data-aos="fade-left"
+	<div class="col-md-4" id="bor" data-aos="zoom-out-up" data-aos="fade-left"
      data-aos-duration="1000" >
 	<div class="car">
 			<img class="card-img-top" src="img/lateam.jpg">
@@ -353,7 +347,7 @@ if (isset($_POST['Send'])) {
 </div>
 </div>
 
-	<div class="col-md-6" data-aos="fade-down"
+	<div class="col-md-4" data-aos="fade-down"
      data-aos-duration="1000">
 	<div class="car">
 			<img class="card-img-top" src="img/jod.jpg" >
@@ -377,7 +371,7 @@ if (isset($_POST['Send'])) {
 		</button>
 	</div>
 	<div class="modal-body">
-		<p class="card-text"> Jod is a student in  Computer Science, he is a full stack devlopper, is a Database administrator,
+		<p class="card-text"> ..... Jod is a student in  Computer Science, he is a Database administrator,
 								 Back-end Developper, and software Engineer .........</p>
 	</div>
 
@@ -397,6 +391,54 @@ if (isset($_POST['Send'])) {
 </div>
 </div>
 </div>
+
+	<div class="col-md-4" data-aos="fade-right"
+     data-aos-duration="1000">
+		<div class="car">
+			<img class="card-img-top" src="img/pteam.jpg">
+			<div class="card-body">
+				<h4 class="card-title text-center">Pierre Felix</h4>
+
+				 <button type="button" class="btn btn-danger pull-right" data-toggle="modal" data-target="#Padja">Profile </button>
+			</div>
+		</div>
+	</div>
+	<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="Padja" tabindex="-1" role="dialog" aria-labelledby="Padja" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+	<div class="modal-header">
+		<h4 class="modal-title" id="exampleModalCenterTitle">Pierre Felix</h4>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="modal-body">
+
+		<p class="card-text"> Pierre  is a student in Computer Science,
+															he is a designer ...</p>
+	</div>
+
+	<div class="mo-footer">
+
+	<div class="col-12 container-fluid social-footer m-footer">
+		<div class="heading-underline"></div>
+		<a href="#" target="_blank"> <i class='fab fa-linkedin' style='font-size:40px;color:#007dbb'></i></a>
+		<a href="https://github.com/Leadny" target="_blank"><i class='fab fa-github' style='font-size:40px;color:black'></i></a>
+
+	</div>
+	</div>
+
+	<div class="modal-footer">
+
+		 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	</div>
+</div>
+</div>
+</div>
+
 
 </div>
 </div>
@@ -500,7 +542,7 @@ if (isset($_POST['Send'])) {
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>+(55) 49 ... ... ...</h4>
 							<div class="tex-form">
-								<input type="text" class="form-control" placeholder="Your Name" name="name" >
+								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?php isset($_POST['name'])? $_POST['name']: '' ?>">
 								<span>
                                     <?php
                                         if($Count_NameErr > 0) {
@@ -508,7 +550,7 @@ if (isset($_POST['Send'])) {
                                         }
 								    ?>
                                 </span><br><br>
-                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email">
+                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?php isset($_POST['email'])? $_POST['email']: '' ?>">
                                 <span>
                                     <?php
                                     if($Count_emailErr > 0) {
@@ -530,7 +572,7 @@ if (isset($_POST['Send'])) {
 									</label>
 
 									<label>
-										<input type="radio" name="service"  value="B">    Both
+										<input type="radio" name="service"  value="B" checked="">    Both
 									</label>
 								</div><span>
                                     <?php
@@ -549,7 +591,7 @@ if (isset($_POST['Send'])) {
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
 				<h4>Scinnob@scinob.com</h4>
 				<div class="form-group">
-					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message"></textarea>
+					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
                     <span>
                                     <?php
                                     if($CountMessErr > 0) {
@@ -631,16 +673,7 @@ if (isset($_POST['Send'])) {
 </script>
 
 <!--- End of Script Source Files -->
-<script>
-			setTimeout(function(){
-				$('.loader-wrapper').fadeToggle();
-
-			}, 1500);
-</script>
 
 
 </body>
 </html>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>

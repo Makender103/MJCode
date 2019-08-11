@@ -1,11 +1,3 @@
-<?php
-include_once'../Includes/connection.php';
-
-
-$query = "SELECT id, name, email, message, service FROM scinnob_Contact";
-$response = mysqli_query($connect,$query);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
