@@ -5,10 +5,10 @@ $Count_NameErr = $Count_emailErr = $CountMessErr = 0;
 
 if (isset($_POST['Send'])) {
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $service = ($_POST['service'])? $_POST['service']:'B';
+    $name = trim(addslashes($_POST['name']));
+    $email = trim(addslashes($_POST['email']));
+    $message = trim(addslashes($_POST['message']));
+    $service = (trim(addslashes($_POST['service'])))? trim(addslashes($_POST['service'])):'B';
     $date = date("Y-m-d h:i:s");
 
     if (empty($name)) {

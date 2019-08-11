@@ -9,15 +9,15 @@ include_once'../Includes/connection.php';
        echo "<script>alert('Please, fill the blank space')</script>";
     }
     else{
-      $sql = "SELECT username, password FROM adm_login WHERE username = '$user' AND password = '$pswd'";
+      $pswd = md5($pswd);
+     $sql = "SELECT name, email, username, password FROM add_adm WHERE username = '$user' AND  password = '$pswd'";
       $res = mysqli_query($connect, $sql);
       if (mysqli_num_rows($res)  == 0) {
           echo "<script>alert('Login not found')</script>";
-          header("Location: form.php");
+          header("Location: index.php");
       }
       else{
         $row = mysqli_fetch_array($res);
-        //$psw = md5($pswd);
         if ($row['password'] == $pswd) {
           session_start();
           header("Location: adm.php");
