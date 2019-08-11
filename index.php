@@ -36,7 +36,7 @@ if (isset($_POST['Send'])) {
         $ser = 'Please check an option';
         $serErr++;
     }
-    
+
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0 && $serErr == 0){
         $query = "INSERT INTO scinnob_Contact(name, email, message, service) VALUES ('$name','$email', '$message','$service')";
         mysqli_query($connect, $query);
@@ -296,7 +296,7 @@ if (isset($_POST['Send'])) {
 <div class="container-fluid padding">
 <div class="row padding"  data-aos-offset="150">
 
-	<div class="col-md-4" id="bor" data-aos="zoom-out-up" data-aos="fade-left"
+	<div class="col-md-6" id="bor" data-aos="zoom-out-up" data-aos="fade-left"
      data-aos-duration="1000" >
 	<div class="car">
 			<img class="card-img-top" src="img/lateam.jpg">
@@ -344,7 +344,7 @@ if (isset($_POST['Send'])) {
 </div>
 </div>
 
-	<div class="col-md-4" data-aos="fade-down"
+	<div class="col-md-6" data-aos="fade-down"
      data-aos-duration="1000">
 	<div class="car">
 			<img class="card-img-top" src="img/jod.jpg" >
@@ -384,53 +384,6 @@ if (isset($_POST['Send'])) {
 
 	<div class="modal-footer">
 		<button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
-	</div>
-</div>
-</div>
-</div>
-
-	<div class="col-md-4" data-aos="fade-right"
-     data-aos-duration="1000">
-		<div class="car">
-			<img class="card-img-top" src="img/pteam.jpg">
-			<div class="card-body">
-				<h4 class="card-title text-center">Pierre Felix</h4>
-
-				 <button type="button" class="btn btn-danger pull-right" data-toggle="modal" data-target="#Padja">Profile </button>
-			</div>
-		</div>
-	</div>
-	<!-- Button trigger modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="Padja" tabindex="-1" role="dialog" aria-labelledby="Padja" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-<div class="modal-content">
-	<div class="modal-header">
-		<h4 class="modal-title" id="exampleModalCenterTitle">Pierre Felix</h4>
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-	</div>
-	<div class="modal-body">
-
-		<p class="card-text"> Pierre  is a student in Computer Science,
-															he is a designer ...</p>
-	</div>
-
-	<div class="mo-footer">
-
-	<div class="col-12 container-fluid social-footer m-footer">
-		<div class="heading-underline"></div>
-		<a href="#" target="_blank"> <i class='fab fa-linkedin' style='font-size:40px;color:#007dbb'></i></a>
-		<a href="https://github.com/Leadny" target="_blank"><i class='fab fa-github' style='font-size:40px;color:black'></i></a>
-
-	</div>
-	</div>
-
-	<div class="modal-footer">
-
-		 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 	</div>
 </div>
 </div>
