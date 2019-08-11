@@ -1,7 +1,7 @@
 <?php
 include_once'Includes/connection.php';
 include_once'Includes/header.php';
-$Count_NameErr = $Count_emailErr = $CountMessErr = $serErr = 0;
+$Count_NameErr = $Count_emailErr = $CountMessErr = 0;
 
 if (isset($_POST['Send'])) {
 
@@ -35,7 +35,18 @@ if (isset($_POST['Send'])) {
 
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
         $query = "INSERT INTO scinnob_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
-        mysqli_query($connect, $query);
+        $res = mysqli_query($connect, $query);
+        if ($res) {
+        	$mes = "<div class='alert alert-success' role='alert'>
+  							Sent with success!
+					</div>";
+        }
+        else{
+        	$mes = "<div class='alert alert-danger' role='alert'>
+  						Sent failed!
+					</div>";
+			$mes.= mysqli_error($connect);
+        }
     }
 
 }
@@ -493,6 +504,12 @@ if (isset($_POST['Send'])) {
 	<div class="container contact_form">
 	<div class="row">
 			<div class="col-lg-6">
+				<?php 
+					if (isset($mes)) {
+						echo $mes;
+					}
+					else{
+				?>
 				<form action="" method="post" enctype="multipart/form-data">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
@@ -564,7 +581,7 @@ if (isset($_POST['Send'])) {
 
 	</div>
 </div>
-</form>
+</form><?php }?>
 
 	<div class="col-12">
 		<h3 class="heading">From Social Media</h3>
