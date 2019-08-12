@@ -19,7 +19,7 @@ CREATE TABLE add_adm(
   	password  VARCHAR(255) NOT NULL
 )
 
-INSERT INTO add_adm (name, email, username, password) VALUES ('mjtec', 'mjtec@mjtec.com', 'mjtec2019', 'mjtec')
+INSERT INTO add_adm (name, email, username, password) VALUES ('mjtec', 'mjtec@mjtec.com', 'mjtec2019', md5('mjtec'))
 
 
 
