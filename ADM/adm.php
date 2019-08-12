@@ -60,7 +60,7 @@ $response = mysqli_query($connect, $sql);
                           </li>";
             }
        ?>
-        <a class="nav-link" href="#"><?=$variavel?></a>
+        <a class="nav-link" href="#"><?=$variavel?></a>&nbsp;&nbsp;&nbsp;&nbsp;
       </li>
   
     </ul>

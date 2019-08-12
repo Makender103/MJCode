@@ -385,8 +385,8 @@ if (isset($_POST['Send'])) {
 		</button>
 	</div>
 	<div class="modal-body">
-		<p class="card-text"> ..... Jod is a student in  Computer Science, he is a Database administrator,
-								 Back-end Developper, and software Engineer .........</p>
+		<p class="card-text"> ..... student in Computer Science, Data Scientist,
+								 Back-End Developper and software Engineer .........</p>
 	</div>
 
 	<div class="mo-footer">
