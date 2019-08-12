@@ -1,5 +1,6 @@
 <?php
 include_once'../Includes/connection.php'; 
+session_start();
 
 $sql = "SELECT  id, name, email, message, service, clock FROM scinnob_Contact";
 $response = mysqli_query($connect, $sql);
@@ -51,11 +52,17 @@ $response = mysqli_query($connect, $sql);
         <a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Name of ADM</a>
+        <?php
+            if(isset($_SESSION['username']) && isset($_SESSION['name'])){
+              $variavel = $_SESSION['name'] ;
+              $variavel.="<li class='nav-item'>
+                            <a href='logout.php'><ion-icon name='return-right' id='addAdm'></ion-icon></a>
+                          </li>";
+            }
+       ?>
+        <a class="nav-link" href="#"><?=$variavel?></a>
       </li>
-      <li class="nav-item">
-        <a><ion-icon name="return-right" id="addAdm"></ion-icon></a>
-      </li>
+  
     </ul>
   </div>
 </nav>

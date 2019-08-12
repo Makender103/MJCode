@@ -20,7 +20,10 @@ include_once'../Includes/connection.php';
         $row = mysqli_fetch_array($res);
         if ($row['password'] == $pswd) {
           session_start();
-          header("Location: adm.php");
+          $_SESSION['username'] = $user;
+          $_SESSION['name'] = $row['name'];
+          $_SESSION['password'] = $row['password'];
+          header('Location: adm.php');
         }
       }
     }
