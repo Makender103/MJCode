@@ -2,7 +2,7 @@
 include_once'../Includes/connection.php'; 
 session_start();
 
-$sql = "SELECT  id, name, email, message, service, clock FROM scinnob_Contact";
+$sql = "SELECT  id, name, email, message, service, clock FROM mjtech_Contact";
 $response = mysqli_query($connect, $sql);
 
 ?>

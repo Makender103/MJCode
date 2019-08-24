@@ -1,7 +1,7 @@
-CREATE database SCINNOB
-use SCINNOB
+CREATE database MJTECH
+use MJTECH
 
-CREATE TABLE scinnob_Contact (
+CREATE TABLE mjtech_Contact (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,  
   name VARCHAR(50) NOT NULL, 
   email VARCHAR(50) NOT NULL, 
