@@ -87,7 +87,7 @@ if (isset($_POST['Send'])) {
 					<a class="nav-link" href="#project">Project</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#teampage">Our Team</a>
+					<a class="nav-link" href="#ourteam">Our Team</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#service">Service</a>
@@ -161,8 +161,7 @@ if (isset($_POST['Send'])) {
 <!--==== About Section ====-->
 <section id="about" class="py-5" class="offset ">
 <div class="row">
-
-		<div class="col-md-8 my-4 animated fadeInUp" style="animation-delay:1s" >
+<div class="col-md-8 my-4 animated fadeInUp" style="animation-delay:1s" >
 			<h1 class=" display-3" >Intro</h1>
 			<h5 class="text-muted" >MJ_tech specializes in Web development and mobile applications,
 															customized and tailored to your needs.
@@ -170,7 +169,7 @@ if (isset($_POST['Send'])) {
 													<p>we work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
 				  <a class="btn btn-secondary my-4 text-capitalize pull-right" data-aos="fade-up"
 			 data-aos-duration="800" data-aos-offset="300" href="#about" target="">learn more</a>
-		</div>
+</div>
 
 		<div class="col-md-4 about-pictures my-4 d-none d-lg-block" class="offset" data-aos="zoom-out-up"
 		data-aos-duration="300" data-aos-offset="300">
@@ -182,10 +181,49 @@ if (isset($_POST['Send'])) {
 
 		</div>
 </div>
-</div>
 
 
 </section>
+
+
+<!-- Counter up section-->
+<section data-aos="fade-up-right">
+
+	<div id="teampage" class="offset midde ">
+	<div class="fixed-background">
+		<div class="row dark text-center">
+
+			<div class="col-12">
+				<h3 class="heading">OUR STATS</h3>
+				<div class="heading-underline"></div>
+			</div>
+				        <div class="col">
+				         <i class="fas fa-briefcase fa-3x facount"></i>
+				          <div class="num">1246</div>
+				          <span>Projetos desenvolvidos</span>
+				        </div>
+
+				        <div class="col">
+				         <i class="fa fa-certificate fa-3x facount"></i>
+				          <div class="num">2</div>
+				          <span>Anos de experiencia</span>
+				        </div>
+
+				        <div class="col">
+				          <i class="fa fa-users fa-3x facount"></i>
+				          <div class="num">687</div>
+				          <span>Clientes Satisfeitos</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				 </section>
+
+
+  <script type="text/javascript">
+    $(".num").counterUp({delay:10,time:1000});
+  </script>
+
 
 
 <!-- Project section -->
@@ -301,7 +339,7 @@ if (isset($_POST['Send'])) {
 
 
 <!--team  Section-->
-<div id="teampage" class="offset">
+<div id="ourteam" class="offset">
 	<div class="fixed-background">
 		<div class="row dark text-center">
 

@@ -247,6 +247,52 @@ body{
   font-size: 1.1rem;
 }
 
+
+/*==========Counter up=============*/
+.midde{
+  width: 100%;
+  /*transform: translateY(-50%);*/
+    background-image: url('img/computers.png');
+
+}
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+
+.col span{
+  text-align: center;
+  padding: 20px;
+  color: #808080;
+  text-transform: uppercase;
+
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.facount{
+  color: #8B0000;
+}
+
+
 /**==Service===*/
 .narrow{
   width:75%;
