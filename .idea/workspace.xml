@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="305f5f9b-cfbb-4e2f-ae52-236ca30986df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADM/adm.php" beforeDir="false" afterPath="$PROJECT_DIR$/ADM/adm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Includes/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Includes/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scinnob.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scinnob.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scinnob.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mjtec.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,16 +21,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/SCINNOB.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
@@ -84,6 +74,7 @@
       <workItem from="1564227283455" duration="621000" />
       <workItem from="1566346328770" duration="1052000" />
       <workItem from="1566431773838" duration="5000" />
+      <workItem from="1566674409328" duration="3526000" />
     </task>
     <servers />
   </component>

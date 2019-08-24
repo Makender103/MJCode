@@ -543,6 +543,7 @@ if (isset($_POST['Send'])) {
 		<?php 
 					if (isset($mes)) {
 						echo $mes;
+						echo '<a href="index.php">Home</a>';
 					}
 					else{
 				?>
