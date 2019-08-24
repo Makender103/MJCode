@@ -34,7 +34,7 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
-        $query = "INSERT INTO mjtech_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
+        $query = "INSERT INTO mjcode_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
         $res = mysqli_query($connect, $query);
         if ($res) {
         	$mes = "<div class='alert alert-success' role='alert' id='Status_mes'>
