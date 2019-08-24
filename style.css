@@ -476,6 +476,11 @@ padding-left: 8px;
   margin-bottom: 5;
   color: white;
 }
+#Status_mes{
+  padding: 10px;
+  margin: 20px auto;
+}
+
 .social svg.svg-inline--fa:hover{
 color :#8B0000 !important;
 -ms-transform: scale(1.5); /* IE 9 */
