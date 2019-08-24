@@ -86,7 +86,7 @@ $response = mysqli_query($connect, $sql);
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($response as $key => $value) {
+          <?php foreach ($response as $value) {
               $service = $value['service'];
               if ($service=='W') {
                   $service = 'Web';

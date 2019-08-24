@@ -37,7 +37,7 @@ if (isset($_POST['Send'])) {
         $query = "INSERT INTO mjtech_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
         $res = mysqli_query($connect, $query);
         if ($res) {
-        	$mes = "<div class='alert alert-success' role='alert'>
+        	$mes = "<div class='alert alert-success' role='alert' id='Status_mes'>
   							Sent with success!
 					</div>";
         }
@@ -59,7 +59,7 @@ if (isset($_POST['Send'])) {
     <div class="loader-wrapper">
     <div class="loader">
       <span></span>
-      <span></span>
+      <span>MJTEC</span>
       <span></span>
     </div>
     </div>
@@ -540,14 +540,14 @@ if (isset($_POST['Send'])) {
 			</div>
 			<!--contact form-->
 	<div class="container contact_form">
-	<div class="row">
-			<div class="col-lg-6">
-				<?php 
+		<?php 
 					if (isset($mes)) {
 						echo $mes;
 					}
 					else{
 				?>
+	<div class="row">
+			<div class="col-lg-6">
 				<form action="" method="post" enctype="multipart/form-data">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
@@ -658,31 +658,10 @@ if (isset($_POST['Send'])) {
 </div>
 </footer>
 
-<script type="text/javascript">
-  AOS.init({
-		duration:2000,
-	});
-</script>
-
 <!--- Script Source Files -->
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/index.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-
-<!--AOS-->
-<script type="text/javascript">
-  AOS.init({
-		duration:2000,
-	});
-</script>
-
-<!--- End of Script Source Files -->
-<script>
-			setTimeout(function(){
-				$('.loader-wrapper').fadeToggle();
-
-			}, 1500);
-</script>
-
 </body>
 </html>
