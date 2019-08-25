@@ -69,7 +69,7 @@ if (isset($_POST['Send'])) {
 <div id="home">
 	<!--Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><img src="img/logo.png">MJCode</a>
+  <a class="navbar-brand" href="#"><img src="img/logo.png">MJcode</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
 	 data-target="#navbarResponsive" >
     <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@ if (isset($_POST['Send'])) {
 			<ul class="navbar-nav ml-auto active">
 
 				<li class="nav-item">
-					<a class="nav-link" href="#home">home</a>
+					<a class="nav-link" href="#home">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#about">About</a>
@@ -93,7 +93,7 @@ if (isset($_POST['Send'])) {
 					<a class="nav-link" href="#service">Service</a>
 				</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact us</a>
+						<a class="nav-link" href="#contact">Contact Us</a>
 					</li>
 			</ul>
 		</div>
@@ -594,7 +594,7 @@ if (isset($_POST['Send'])) {
 
 			<div class="col-lg-6">
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
-				<h4>admin@MJCode.com</h4>
+				<h4>admin@mjcode.com</h4>
 				<div class="form-group">
 					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
                     <span class="span">
