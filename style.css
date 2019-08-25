@@ -142,9 +142,9 @@ body{
 
 .line {
     
-      width: 16em;
+      width: 11em;
       border-right: 2px solid rgba(255, 255, 255, 0.75);
-      font-size: 180%;
+
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
@@ -162,16 +162,20 @@ body{
             width: 0;
       }
       to {
-            width: 16em;
+            width: 11em;
+
+
       }
 }
 
 @keyframes blinkTextCursor {
       from {
             border-right-color: rgba(255, 255, 255, 0.75);
+
       }
       to {
             border-right-color: transparent;
+  
       }
 }
 }

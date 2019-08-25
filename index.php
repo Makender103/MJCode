@@ -110,7 +110,7 @@ if (isset($_POST['Send'])) {
 				  </ol>
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="img/slide.jpg" class="d-block w-100" alt="...">
+				      <img src="img/slide.jpg" class="d-block w-100" alt="slide 1">
 							<div class="carousel-caption">
 								<h1 class="display-2 line anim-typewriter">
 									<span>MJ</span>Code</h1>
