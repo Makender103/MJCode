@@ -92,6 +92,7 @@ body{
 }
 /****** Navigation--*/
 .navbar {
+  text-transform:uppercase;
   font-weight:700;
   font-size: .9rem;
   letter-spacing:.1rem;
@@ -103,7 +104,7 @@ body{
 }
 
 .navbar-nav li{
-  padding-right: .7rem;
+  padding-right: .7rem:
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -139,24 +140,21 @@ body{
 }
 
 
-.line h1 {
-        position: relative;
-      top: 50%;
+.line {
+    
       width: 16em;
-      margin: 0 auto;
       border-right: 2px solid rgba(255, 255, 255, 0.75);
       font-size: 180%;
       text-align: center;
       white-space: nowrap;
-      overflow: hidden;transform: translateY(-50%);
+      overflow: hidden;
 }
 
 /*Animation*/
 
-.anim-typewriter h1{
+.anim-typewriter {
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCursor 500ms steps(40) infinite normal;
-        overflow: hidden;
 }
 
 @keyframes typewriter {
@@ -175,6 +173,7 @@ body{
       to {
             border-right-color: transparent;
       }
+}
 }
 .carousel-caption h3{
   font-family: 'Kaushan Script', cursive;
