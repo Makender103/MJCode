@@ -111,17 +111,17 @@ if (isset($_POST['create_adm'])) {
 
                           <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your Name" name="name_adm">
+                            <input type="text" class="form-control" placeholder="Enter your Name" name="name_adm" value="<?= isset($name)? $name: '';?>">
                           </div>
 
                           <div class="form-group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" name="email_adm">
+                            <input type="email" class="form-control" placeholder="Enter your email" name="email_adm" value="<?= isset($email)? $email: '';?>">
                           </div>
 
                           <div class="form-group">
                             <label>Username</label>
-                            <input type="text" class="form-control" placeholder="Enter your Username" name="username_adm">
+                            <input type="text" class="form-control" placeholder="Enter your Username" name="username_adm" value="<?= isset($username)? $username: '';?>">
                           </div>
 
                           <div class="form-group">

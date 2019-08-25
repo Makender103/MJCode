@@ -138,7 +138,7 @@ if (isset($_POST['Send'])) {
 				    <div class="carousel-item">
 				      <img src="img/slide3.jpg" class="d-block w-100" alt="...">
 							<div class="carousel-caption">
-								<h1 class="display-2 animated zoomIn" style="animation-delay:1s">Here  <span>for you</span></h1>
+								<h1 class="display-2 animated zoomIn" style="animation-delay:1s">Here  <span>For you</span></h1>
 								<h3 class="animated fadeInLeft" style="animation-delay:2s">Web Design and Development</h3>
 								<a href="#service
 								"><button type="button" class="btn btn-outline-light btn-lg animated bounceInLeft" style="animation-delay:3s">Our Service
