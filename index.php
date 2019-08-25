@@ -112,7 +112,7 @@ if (isset($_POST['Send'])) {
 				    <div class="carousel-item active">
 				      <img src="img/slide.jpg" class="d-block w-100" alt="...">
 							<div class="carousel-caption">
-								<h1 class="display-2 anim-typerwriter line">
+								<h1 class="display-2 line anim-typerwriter">
 									<span>MJ</span>Code</h1>
 								<h3 class="animated bounceInLeft" style="animation-delay:2s">The Technology that simplifies your life</h3>
 								<a href="#service">

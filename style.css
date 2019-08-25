@@ -139,30 +139,39 @@ body{
   color:#8B0000;
 }
 
-.anim-typerwriter{
-  animation: typewriter 3s steps(40) 1s 1 normal both,
-  blinkTextCursor 500ms steps(40) infinite normal;
+
+.line h1 {
+      width: 16em;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      white-space: nowrap;
+      overflow: hidden;transform:;
 }
 
-@keyframes typewriter{
-  from{
-    width: 0;
-  }
-  to{
-    width:16em;
-  }
+/*Animation*/
+
+.anim-typewriter h1{
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
 }
 
-@keyframes blinkTexCursor{
-
-   from{
-    border-right-color: rgba(255,255,255,0.75);
-  }
-  to{
-    border-right-color: transparent;
-  }
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
 }
 
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
 .carousel-caption h3{
   font-family: 'Kaushan Script', cursive;
   font-size:200%;
