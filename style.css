@@ -140,11 +140,15 @@ body{
 
 
 .line h1 {
+        position: relative;
+      top: 50%;
       width: 16em;
+      margin: 0 auto;
       border-right: 2px solid rgba(255, 255, 255, 0.75);
       font-size: 180%;
+      text-align: center;
       white-space: nowrap;
-      overflow: hidden;transform:;
+      overflow: hidden;transform: translateY(-50%);
 }
 
 /*Animation*/
@@ -152,6 +156,7 @@ body{
 .anim-typewriter h1{
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCursor 500ms steps(40) infinite normal;
+        overflow: hidden;
 }
 
 @keyframes typewriter {
