@@ -59,7 +59,7 @@ if (isset($_POST['Send'])) {
     <div class="loader-wrapper">
     <div class="loader">
       <span></span>
-      <span>MJTEC</span>
+      <span></span>
       <span></span>
     </div>
     </div>

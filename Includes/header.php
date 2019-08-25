@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/fixed.css">
 
 
-	<title>MJ_TECH - Blog</title>
+	<title>MJCode - Blog</title>
 	<link rel="icon" href="img/logo.png">
 
 </head>
