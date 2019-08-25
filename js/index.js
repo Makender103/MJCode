@@ -8,3 +8,5 @@ setTimeout(function(){
 
 }, 650);
 
+ $(".num").counterUp({delay:10,time:1000});
+

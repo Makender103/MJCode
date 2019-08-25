@@ -69,7 +69,7 @@ if (isset($_POST['Send'])) {
 <div id="home">
 	<!--Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><img src="img/logo.png">MJCode</a>
+  <a class="navbar-brand" href="#"><img src="img/logo.png">MJcode</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
 	 data-target="#navbarResponsive" >
     <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@ if (isset($_POST['Send'])) {
 			<ul class="navbar-nav ml-auto active">
 
 				<li class="nav-item">
-					<a class="nav-link" href="#home">home</a>
+					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#about">About</a>
@@ -93,7 +93,7 @@ if (isset($_POST['Send'])) {
 					<a class="nav-link" href="#service">Service</a>
 				</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact us</a>
+						<a class="nav-link" href="#contact">Contact Us</a>
 					</li>
 			</ul>
 		</div>
@@ -113,7 +113,7 @@ if (isset($_POST['Send'])) {
 				      <img src="img/slide.jpg" class="d-block w-100" alt="slide 1">
 							<div class="carousel-caption">
 								<h1 class="display-2 line anim-typewriter">
-									<span>MJ</span>Code</h1>
+									<span>MJ</span>code</h1>
 								<h3 class="animated bounceInLeft" style="animation-delay:2s">The Technology that simplifies your life</h3>
 								<a href="#service">
 									<button type="button" class="btn btn-outline-light btn-lg animated zoomIn"
@@ -138,7 +138,7 @@ if (isset($_POST['Send'])) {
 				    <div class="carousel-item">
 				      <img src="img/slide3.jpg" class="d-block w-100" alt="...">
 							<div class="carousel-caption">
-								<h1 class="display-2 animated zoomIn" style="animation-delay:1s">here  <span>for you</span></h1>
+								<h1 class="display-2 animated zoomIn" style="animation-delay:1s">Here  <span>for you</span></h1>
 								<h3 class="animated fadeInLeft" style="animation-delay:2s">Web Design and Development</h3>
 								<a href="#service
 								"><button type="button" class="btn btn-outline-light btn-lg animated bounceInLeft" style="animation-delay:3s">Our Service
@@ -218,13 +218,6 @@ if (isset($_POST['Send'])) {
 				    </div>
 				  </div>
 				 </section>
-
-
-  <script type="text/javascript">
-    $(".num").counterUp({delay:10,time:1000});
-  </script>
-
-
 
 <!-- Project section -->
 <section id="project" class="offset">
@@ -344,7 +337,7 @@ if (isset($_POST['Send'])) {
 		<div class="row dark text-center">
 
 			<div class="col-12">
-				<h3 class="heading">The MJCode LEAD</h3>
+				<h3 class="heading">The MJcode LEAD</h3>
 				<div class="heading-underline"></div>
 			</div>
 			<!--Cards-->
@@ -554,7 +547,7 @@ if (isset($_POST['Send'])) {
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>+(55) 49 ... ... ...</h4>
 							<div class="tex-form">
-								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?php isset($_POST['name'])? $_POST['name']: '' ?>">
+								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?= isset($name)? $name: '' ;?>">
 								<span class="span">
                                     <?php
                                         if($Count_NameErr > 0) {
@@ -562,7 +555,7 @@ if (isset($_POST['Send'])) {
                                         }
 								    ?>
                                 </span><br><br>
-                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?php isset($_POST['email'])? $_POST['email']: '' ?>">
+                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?= isset($email)? $email: '' ;?>">
                                 <span class="span">
                                     <?php
                                     if($Count_emailErr > 0) {
@@ -574,7 +567,7 @@ if (isset($_POST['Send'])) {
 							</div>
 
 						<div class="checkbox">
-								<div class="radio"  >
+								<div class="radio">
 									<label>
 										<input type="radio" name="service"  value="W">     Web<br>
 									</label>
@@ -596,7 +589,7 @@ if (isset($_POST['Send'])) {
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
 				<h4>admin@mjcode.com</h4>
 				<div class="form-group">
-					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
+					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?= isset($message)? $message: '' ;?>"></textarea>
                     <span class="span">
                                     <?php
                                     if($CountMessErr > 0) {
@@ -660,6 +653,10 @@ if (isset($_POST['Send'])) {
 </footer>
 
 <!--- Script Source Files -->
+<!--counter up-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/index.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
