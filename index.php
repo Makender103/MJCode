@@ -594,7 +594,7 @@ if (isset($_POST['Send'])) {
 
 			<div class="col-lg-6">
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
-				<h4>admin@MJCode.com</h4>
+				<h4>admin@mjcode.com</h4>
 				<div class="form-group">
 					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?php isset($_POST['message'])? $_POST['message']: '' ?>"></textarea>
                     <span class="span">
