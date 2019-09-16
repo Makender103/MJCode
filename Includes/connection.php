@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$user = "root";
-$senha = "";
-$database = "MJCode";
+$host = "host2";
+$user = "mjcode";
+$senha = "@M&Jcod&16";
+$database = "MJcode";
 $connect = mysqli_connect($host, $user, $senha, $database) or
 die("Error to connect.");
 mysqli_query($connect, "SET NAMES 'utf8'");
