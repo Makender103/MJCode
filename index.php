@@ -257,7 +257,7 @@ if (isset($_POST['Send'])) {
 			<div class="content">
 				<h3>Mobile App</h3>
 				<p>To better manage your daily business</p>
-				<a href="#" class="btn btn-info btnD">Read More </a>
+				<a href="#" class="btn btn-info btnD">Read More about us </a>
 
 			</div>
 
