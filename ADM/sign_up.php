@@ -106,7 +106,7 @@ if (isset($_POST['create_adm'])) {
                           }else{?>
                       
                         <form id="log" action="" method="post" enctype="multipart/form-data">
-                        <h1>MJTEC - Add New ADM</h1>
+                        <h1>MJcodes - Add New ADM</h1>
                         <img class="card-img-top img img-responsive" src="img/t4.gif">
 
                           <div class="form-group">
