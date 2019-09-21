@@ -81,7 +81,7 @@ if (isset($_POST['Send'])) {
 					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#about">About Us</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#project">Project</a>
