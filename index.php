@@ -69,7 +69,7 @@ if (isset($_POST['Send'])) {
 <div id="home">
 	<!--Navigation-->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="index.php"><img src="img/logo.png">MJcode</a>
+  <a class="navbar-brand" href="index.php"><img src="img/logom.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
 	 data-target="#navbarResponsive" >
     <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@ if (isset($_POST['Send'])) {
 					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#about">About us</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#project">Project</a>
@@ -166,18 +166,14 @@ if (isset($_POST['Send'])) {
 			<h5 class="text-muted" >MJCode specializes in Web development and mobile applications,
 															customized and tailored to your needs.
 
-													<p>we work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
+													<p>50e work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
 				  <a class="btn btn-secondary my-4 text-capitalize pull-right" data-aos="fade-up"
 			 data-aos-duration="800" data-aos-offset="300" href="#about" target="">learn more</a>
 </div>
 
-		<div class="col-md-4 about-pictures my-4 d-none d-lg-block" class="offset" data-aos="zoom-out-up"
+		<div class="col-md-4 offset " data-aos="zoom-out-up"
 		data-aos-duration="300" data-aos-offset="300">
-			<img src="img/img1.jpg" alt="" class="img-1 img-thumbnail about-image">
-			<img src="img/img2.jpg" alt="" class="img-2 img-thumbnail about-image">
-			<img src="img/img3.jpg" alt="" class="img-3 img-thumbnail about-image">
-			<img src="img/img4.jpeg" alt="" class="img-4 img-thumbnail about-image">
-			<img src="img/img5.jpeg" alt="" class="img-5 img-thumbnail about-image">
+			<img src="img/logheader.png"  class="img-1 about-image">
 
 		</div>
 </div>
@@ -185,145 +181,117 @@ if (isset($_POST['Send'])) {
 
 </section>
 
-
-<!-- Counter up section-->
-<section data-aos="fade-up-right">
-
-	<div id="teampage" class="offset midde ">
-	<div class="fixed-background">
-		<div class="row dark text-center">
-
-			<div class="col-12">
-				<h3 class="heading">OUR STATS</h3>
-				<div class="heading-underline"></div>
+<!--Service Section-->
+<div id="service" class="offset ">
+<div class=" row service-section">	<!--jumbotron-->
+		<div class="col-md-12 text-center">
+			<h3 class="heading head">Our Services</h3>
+			<div class="head-underline "> </div>
+		</div>
+		<!--service section -->
+		<div class="service-box ">   
+			<div class="service-icon">
+			<i class="fa fa-desktop" aria-hidden="true"></i>
 			</div>
-				        <div class="col">
-				         <i class="fas fa-briefcase fa-3x facount"></i>
-				          <div class="num">1246</div>
-				          <span>Projetos desenvolvidos</span>
-				        </div>
+			<div class="service-title">Web Design</div>
 
-				        <div class="col">
-				         <i class="fa fa-certificate fa-3x facount"></i>
-				          <div class="num">2</div>
-				          <span>Anos de experiencia</span>
-				        </div>
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
+				suscipit! Et neque quas aspernatur nemo fugit!
+			</div>
+		</div>
+		
+		<div class="service-box">   
+			<div class="service-icon">
+			<i class="fas fa-sitemap"></i>
+			</div>
+			<div class="service-title">Criaçao de Landing page</div>
 
-				        <div class="col">
-				          <i class="fa fa-users fa-3x facount"></i>
-				          <div class="num">687</div>
-				          <span>Clientes Satisfeitos</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				 </section>
-
-<!-- Project section -->
-<section id="project" class="offset">
-<div class="container-fluid">
-<div class="row" >
-		<div class="col-12">
-			<h3 class="heading text-center">Our expertise</h3>
-			<div class="heading-underline"></div>
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
+				suscipit! Et neque quas aspernatur nemo fugit!
+			</div>
 		</div>
 
-		<div class="col-md-4" data-aos="flip-left"
-		     data-aos-easing="ease-out-cubic"
-		     data-aos-duration="1000" data-aos-offset="300">
-		<div class="box">
-			<div class="imgBox">
-				<img src="img/b1.jpg" class="img-responsive">
+		<div class="service-box">   
+			<div class="service-icon">
+				<i class="fas fa-paint-brush"></i>
 			</div>
+			<div class="service-title">Gerenciamento de rede sociais</div>
 
-			<div class="content">
-				<h3>Web development</h3>
-				<p>We develop iOS and Android apps</p>
-				<a href="#" class="btn btn-info btnD">Read More </a>
-
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis
 			</div>
-
-		</div>
 		</div>
 
-		<div class="col-md-4" data-aos="flip-left"
-		     data-aos-easing="ease-out-cubic"
-		     data-aos-duration="1000" data-aos-offset="300">
-		<div class="box">
-			<div class="imgBox">
-				<img src="img/b2.jpg" class="img-responsive">
+		<div class="service-box">   
+			<div class="service-icon">
+				<i class="fas fa-paint-brush"></i>
 			</div>
+			<div class="service-title">Optimizaçao de sites(SEO)</div>
 
-			<div class="content">
-				<h3>Mobile App</h3>
-				<p>To better manage your daily business</p>
-				<a href="#" class="btn btn-info btnD">Read More </a>
-
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
+				suscipit! Et neque quas aspernatur nemo fugit!
 			</div>
-
-		</div>
 		</div>
 
-		<div class="col-md-4" data-aos="flip-left"
-		     data-aos-easing="ease-out-cubic"
-		     data-aos-duration="1000" data-aos-offset="300">
-		<div class="box">
-			<div class="imgBox">
-				<img src="img/img3.jpg">
+		<div class="service-box">   
+			<div class="service-icon">
+				<i class="fas fa-database"></i>
 			</div>
+			<div class="service-title">Criaçao de Sites Ecommerce</div>
 
-			<div class="content">
-				<h3>web hosting</h3>
-				<p>We ensure the putting on line and the availability of your site</p>
-				<a href="#" class="btn btn-info btnD">Read More </a>
-
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
+				suscipit! Et neque quas aspernatur nemo fugit!
 			</div>
+		</div>
 
+		<div class="service-box">   
+			<div class="service-icon">
+				<i class="fas fa-database iconei"></i>
+			</div>
+			<div class="service-title">Criaçao de App Mobile</div>
+
+			<div class="service-desc">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				Odit voluptatum neque explicabo distinctio labore assumenda,
+				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
+				suscipit! Et neque quas aspernatur nemo fugit!
+			</div>
 		</div>
-		</div>
+
+			
+		
 
 
 </div>
 </div>
-</section>
+
+
 
 	<!--======Jumbotron======-->
 
 <section class="offset">
 			<div class="row text-center">
 
-				<div class="col-md-4">
-					<div class="feature">
-						<i class="fa fa-play-circle fa-4x" data-fa-transform=
-						"shrink-3 up-5"></i>
-						<h3>Animation section</h3>
-						<p>n sait depuis longtemps que travailler avec du texte
-							lisible et co
-						</p>
-					</div>
-				</div>
+			<div  class="col-12 narrow text-center" data-aos="flip-left"
+		     data-aos-easing="ease-out-cubic"
+		     data-aos-duration="1000" data-aos-offset="300">
+			<a class="btn btn-secondary btn-md" href="#contact">Hire us</a>
+		</div>
 
-				<div class="col-md-4">
-					<div class="feature">
-						<i class="fa fa-sliders-h fa-4x" data-fa-transform=
-						"shrink-4.5 up-4.5"></i>
-						<h3> slider Section</h3>
-						<p>n sait depuis longtemps que travailler avec du texte
-							lisible et co
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="feature">
-						<i class="fab fa-wpforms fa-4x" data-fa-transform=
-						"shrink-3 up-5"></i>
-						<h3>contact form</h3>
-						<p>n sait depuis longtemps que travailler avec du texte
-							lisible et co
-						</p>
-					</div>
-				</div>
 
 
 			</div>
@@ -337,17 +305,17 @@ if (isset($_POST['Send'])) {
 		<div class="row dark text-center">
 
 			<div class="col-12">
-				<h3 class="heading">The MJcode LEAD</h3>
+				<h3 class="heading">The MJcode Lead</h3>
 				<div class="heading-underline"></div>
 			</div>
 			<!--Cards-->
 <div class="container-fluid padding">
 <div class="row padding"  data-aos-offset="150">
 
-	<div class="col-md-6" id="bor" data-aos="zoom-out-up" data-aos="fade-left"
+	<div class="col-sm-6" id="bor" data-aos="zoom-out-up" data-aos="fade"
      data-aos-duration="1000" >
 	<div class="car">
-			<img class="card-img-top" src="img/lateam.jpg">
+			<img class="card-img-top img-responsive" src="img/marck.png">
 			<div class="card-body">
 				<h4 class="card-title text-center">Marc-kender</h4>
 
@@ -395,7 +363,7 @@ if (isset($_POST['Send'])) {
 	<div class="col-md-6" data-aos="fade-down"
      data-aos-duration="1000">
 	<div class="car">
-			<img class="card-img-top" src="img/jod.jpg" >
+			<img class="card-img-top img-responsive" src="img/jodmj.png" >
 			<div class="card-body">
 				<h4 class="card-title text-center">Jod Fedlet</h4>
 
@@ -453,59 +421,73 @@ if (isset($_POST['Send'])) {
 
 <!--clients Section-->
 
-<!--end-->
-
-<!--Service Section-->
-<div id="service" class="offset">
-<div class="jumbotron">	<!--jumbotron-->
-		<div class="col-12 text-center">
-			<h3 class="heading">Our Services</h3>
-			<div class="heading-underline"> </div>
+<!-- Project section -->
+<section id="project" class="offset">
+<div class="container-fluid">
+<div class="row" >
+		<div class="col-12">
+			<h3 class="heading text-center">Our expertise</h3>
+			<div class="heading-underline"></div>
 		</div>
 
-			<div class="row">
-				<div class="col-md-4" data-aos="fade-right"
-				     data-aos-offset="300" data-aos-duration="1000"
-				     data-aos-easing="ease-in-sine">
-				<div class="single-service">
+		<div class="col-md-4" data-aos="flip-left"
+		     data-aos-easing="ease-out-cubic"
+		     data-aos-duration="1000" data-aos-offset="300">
+		<div class="box">
+			<div class="imgBox">
+				<img src="img/b1.jpg" class="img-responsive">
+			</div>
 
-							<div class="service-bg service-bg-1">
-								<h2>Web Design</h2>
-							</div>
-
-
-				</div>
-				</div>
-
-				<div class="col-md-4" data-aos="fade-up"
-     data-aos-duration="1000"  data-aos-easing="ease-in-sine
-		 " data-aos-offset="300">
-				<div class="single-service">
-
-							<div class="service-bg service-bg-2">
-								<h2>Web Development</h2>
-							</div>
-
-				</div>
-				</div>
-
-				<div class="col-md-4" data-aos="fade-right"
-				     data-aos-offset="300"
-				     data-aos-duration="1000">
-				<div class="single-service">
-
-							<div class="service-bg service-bg-3">
-								<h2>Mobile Dev</h2>
-							</div>
-
-
-				</div>
-				</div>
+			<div class="content">
+				<h3 class="text-center">Web development</h3>
+				<p>We develop iOS and Android apps</p>
+				<a href="#" class="btn btn-info btnD">Read More </a>
 
 			</div>
 
+		</div>
+		</div>
+
+		<div class="col-md-4" data-aos="flip-left"
+		     data-aos-easing="ease-out-cubic"
+		     data-aos-duration="1000" data-aos-offset="300">
+		<div class="box">
+			<div class="imgBox">
+				<img src="img/b2.jpg" class="img-responsive">
+			</div>
+
+			<div class="content">
+				<h3>Mobile App</h3>
+				<p>To better manage your daily business</p>
+				<a href="#" class="btn btn-info btnD">Read More </a>
+
+			</div>
+
+		</div>
+		</div>
+
+		<div class="col-md-4" data-aos="flip-left"
+		     data-aos-easing="ease-out-cubic"
+		     data-aos-duration="1000" data-aos-offset="300">
+		<div class="box">
+			<div class="imgBox">
+				<img src="img/img3.jpg">
+			</div>
+
+			<div class="content">
+				<h3>web hosting</h3>
+				<p>We ensure the putting on line and the availability of your site</p>
+				<a href="#" class="btn btn-info btnD">Read More </a>
+
+			</div>
+
+		</div>
+		</div>
 
 
+</div>
+</div>
+</section>
 
 
 </div>
@@ -536,7 +518,8 @@ if (isset($_POST['Send'])) {
 		<?php 
 					if (isset($mes)) {
 						echo $mes;
-						echo '<a href="index.php">Home</a>';
+						echo "<meta http-equiv='refresh' content='2'>";
+	
 					}
 					else{
 				?>
@@ -587,7 +570,7 @@ if (isset($_POST['Send'])) {
 
 			<div class="col-lg-6">
 				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
-				<h4>admin@mjcode.com</h4>
+				<h4>contact@mjcode.net</h4>
 				<div class="form-group">
 					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?= isset($message)? $message: '' ;?>"></textarea>
                     <span class="span">
@@ -599,7 +582,7 @@ if (isset($_POST['Send'])) {
                                     ?>
                                 </span><br>
                 </div>
-				<input type="submit" class="btn btn-success pull-right" name="Send"></br>
+				<input type="submit" class="btn btn-success b-contack pull-right" name="Send"></br>
 
 			</div>
 
@@ -623,9 +606,9 @@ if (isset($_POST['Send'])) {
 	<div class="container-fluid padding">
 	<div class="row text-center padding">
 	<div class="col-12 social padding">
-		<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		<a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
-		<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.facebook.com/MJcode13/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		<a href="https://www.twitter.com/mjcode13" target="_blank"><i class="fab fa-twitter-square"></i></a>
+		<a href="https://www.instagram.com/mjcode16/" target="_blank"><i class="fab fa-instagram"></i></a>
 		<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
 
 	</div>

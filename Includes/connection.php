@@ -1,7 +1,7 @@
 <?php
-$host = "host2";
-$user = "mjcode";
-$senha = "@M&Jcod&16";
+$host = "localhost";
+$user = "root";
+$senha = "";
 $database = "MJcode";
 $connect = mysqli_connect($host, $user, $senha, $database) or
 die("Error to connect.");

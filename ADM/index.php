@@ -44,7 +44,7 @@ include_once'../Includes/connection.php';
 
 
 	<title>MJTECH - ADM login Form</title>
-	<link rel="icon" href="img/logo.png">
+	<link rel="icon" href="img/logheader.png">
 
 
 </head>

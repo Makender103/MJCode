@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>MJcode</title>
+	<link rel="icon" href="img/logheader.png">
+
 	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 
 	<!--animation scroll script-->
@@ -14,6 +16,6 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/fixed.css">
-	<link rel="icon" href="img/logo.png">
+	
 
 </head>
