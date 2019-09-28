@@ -275,7 +275,7 @@ margin-top: 10%;
 
 /**Service Section **/
 .service-section{
-  background-image: url('img/computers.png');
+  background-image: ;
   background-size: cover;
   padding: 60px 10px;
   width: 100%;
@@ -284,16 +284,7 @@ margin-top: 10%;
 }
 
 .head{
-  color: #ebebeb;
-  
-}
-
-.head-underline{
-  width: 5rem;
-  height: .2rem;
-  background-color: #ebebeb;
-  margin:0 auto 1.5rem;
-
+  color: #505962;
   
 }
 
@@ -308,11 +299,13 @@ margin-top: 10%;
   text-align: center;
   color:#ddd;
   cursor: pointer;
-  padding: 0% 5%;
+  padding: 0% 2%;
   transition: all 2s ease;
   opacity: 0.9;
-  background: rgba(0,0,0.3);
+  background: #696969;
   transform: scale(0.9) rotate(0deg);
+  border-radius: 5px;
+  text-transform: capitalize;
   
 }
 
@@ -358,7 +351,7 @@ service-title{
   margin-bottom: 10px;
 }
 .service-desc{
-  font-size:14px;
+  font-size:12px;
 }
 
 
@@ -560,7 +553,10 @@ font-family: 'Times New Roman';
 }
 
 .b-contact{
-padding-left: 10px;
+position: absolute;
+right: 3%;
+top: 78%;
+border: 1px solid #8B0000;
 }
 
 .fixed-background h3{
@@ -615,71 +611,6 @@ transform: scale(1.5);
 padding-left: 8px;
 }
 
-/***======= Service Section*======*/
-.single-service{
-  border:1px solid #ebebeb;
-  text-align: center;
-  background: lightgray;
-}
-.service-bg{
-  height: 200px;
-  position:relative;
-}
-.service-bg-1{
-  width:100%;
-  background: url("img/img4.jpeg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-.service-bg-2{
-  width:100%;
-  background: url("img/img5.jpeg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-.service-bg-3{
-  width:100%;
-  background: url("img/img3.jpg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg h2{
-  color:#fff;
-  background: tomato;
-  border:1px solid tomato;
-  font-size: 17px;
-  font-weight: 700;
-  padding:15px;
-  position:absolute;
-  left:8%;
-  width: 84%;
-  margin: 0;
-  bottom: -25px;
-  border-radius:50px;
-  letter-spacing:2px;
-}
-.single-service:hover .service-bg h2{
-  background-color: #fff;
-  transition:.9s;
-  color:tomato;
-}
-.service-text{
-  padding:50px 30px 20px;
-  font-size: 15px;
-  font-weight:400;
-}
-.service-text p:last-child{
-  margin: 0;
-  line-height: 1.8;
-}
-
-.span{
-  color: red;
-}
 
 
 /****footer**/
@@ -886,7 +817,15 @@ small{
 
   .service-box{
     max-width: 100%;
+
   }
+
+  .b-contact{
+    position: absolute;
+    right: 9%;
+    top: 78%;
+    border: 1px solid #8B0000;
+    }
 
 }
 

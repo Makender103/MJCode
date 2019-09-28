@@ -186,7 +186,7 @@ if (isset($_POST['Send'])) {
 <div class=" row service-section">	<!--jumbotron-->
 		<div class="col-md-12 text-center">
 			<h3 class="heading head">Our Services</h3>
-			<div class="head-underline "> </div>
+			<div class="heading-underline"></div>
 		</div>
 		<!--service section -->
 		<div class="service-box ">   
@@ -283,12 +283,10 @@ if (isset($_POST['Send'])) {
 
 	<!--======Jumbotron======-->
 
-<section class="offset">
-			<div class="row text-center">
+<section class="offset"  >
+			<div class="row text-center ">
 
-			<div  class="col-12 narrow text-center" data-aos="flip-left"
-		     data-aos-easing="ease-out-cubic"
-		     data-aos-duration="1000" data-aos-offset="300">
+			<div  class="col-12 narrow text-center" >
 			<a class="btn btn-secondary btn-md" href="#contact">Hire us</a>
 		</div>
 
@@ -510,7 +508,7 @@ if (isset($_POST['Send'])) {
 		<div class="dark text-center">
 
 			<div class="col-12">
-				<h3 class="heading">how can we help u ?</h3>
+				<h3 class="heading">How Can we help u ?</h3>
 				<div class="heading-underline"></div>
 			</div>
 			<!--contact form-->
@@ -528,7 +526,7 @@ if (isset($_POST['Send'])) {
 				<form action="" method="post" enctype="multipart/form-data">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
-						<h4>+(55) 49 ... ... ...</h4>
+						<h4>+(55) 49 99966-9170</h4>
 							<div class="tex-form">
 								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?= isset($name)? $name: '' ;?>">
 								<span class="span">
@@ -582,7 +580,7 @@ if (isset($_POST['Send'])) {
                                     ?>
                                 </span><br>
                 </div>
-				<input type="submit" class="btn btn-success b-contack pull-right" name="Send"></br>
+				<input type="submit" class="btn btn-success b-contact pull-right " name="Send"></br>
 
 			</div>
 
