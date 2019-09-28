@@ -217,32 +217,7 @@ if (isset($_POST['Send'])) {
 			</div>
 		</div>
 
-		<div class="service-box">   
-			<div class="service-icon">
-				<i class="fas fa-paint-brush"></i>
-			</div>
-			<div class="service-title">Gerenciamento de rede sociais</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis
-			</div>
-		</div>
-
-		<div class="service-box">   
-			<div class="service-icon">
-				<i class="fas fa-paint-brush"></i>
-			</div>
-			<div class="service-title">Optimizaçao de sites(SEO)</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
-				suscipit! Et neque quas aspernatur nemo fugit!
-			</div>
-		</div>
+		
 
 		<div class="service-box">   
 			<div class="service-icon">
