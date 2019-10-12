@@ -269,93 +269,34 @@ margin-top: 10%;
   font-size: 1.1rem;
 }
 
-
-
-
-
 /**Service Section **/
 .service-section{
-  background-image: ;
-  background-size: cover;
   padding: 60px 10px;
   width: 100%;
   overflow:hidden;
-  
-}
-
-.head{
-  color: #505962;
-  
-}
-
-.service-title{
-  text-align: center;
-  color: #8B0000;
-  text-transform: uppercase;
-}
-
-.service-box{
-  max-width:50%;
-  text-align: center;
-  color:#ddd;
   cursor: pointer;
-  padding: 0% 2%;
-  transition: all 2s ease;
-  opacity: 0.9;
-  background: #696969;
-  transform: scale(0.9) rotate(0deg);
-  border-radius: 5px;
-  text-transform: capitalize;
-  
 }
 
-.service-box:hover{
+.card:hover{
+  border: 1px solid red;
+  background-color: #505962;
+  color: #ebebeb
+}
 
-  outline:4px solid #505962;
-  z-index:30;
+.fa-laptop-code, .fa-tv, .fa-mobile-alt, .fa-chalkboard-teacher{
+  font-size: 600%;
+  text-align: center;
+  position: absolute;
+  padding: 5%;
+  top: 3%; 
+  left: 30%;
+  padding-bottom:1%; 
+}
+
+.card-body   {
+  padding: 15%;
   opacity: 1;
 }
-
-.service-icon{
-display: inline-block;
-width:70px;
-height: 70px;
-border: 3px solid #8B0000;
-transform: rotate(45deg);
-margin-bottom: 30px;
-margin-top: 16px;
-transition: 0,3s linear;
-}
-
-.service-icon i{
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
-  margin-top:10px;
-}
-.svg-inline--fa{
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
-  margin-top:10px;
-}
-
-.service-box:hover .service-icon{
-  background: #8B0000;
-  color: #ddd;
-}
-
-service-title{
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.service-desc{
-  font-size:12px;
-}
-
-
-
 
 
 

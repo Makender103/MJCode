@@ -167,8 +167,7 @@ if (isset($_POST['Send'])) {
 															customized and tailored to your needs.
 
 													<p>50e work with individuals, small businesses with projects that they want to "implement/update/add " or just refactor for a better architecture. we also work with teams that want someone with our skills.</p> </h5>
-				  <a class="btn btn-secondary my-4 text-capitalize pull-right" data-aos="fade-up"
-			 data-aos-duration="800" data-aos-offset="300" href="#about" target="">learn more</a>
+				  <a class="btn btn-secondary my-4 text-capitalize pull-right" href="#about" target="">learn more</a>
 </div>
 
 		<div class="col-md-4 offset " data-aos="zoom-out-up"
@@ -188,72 +187,92 @@ if (isset($_POST['Send'])) {
 			<h3 class="heading head">Our Services</h3>
 			<div class="heading-underline"></div>
 		</div>
+
+		<div class="card mb-6 col-md-6">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+				<i class="fas fa-laptop-code img-responsive text-center"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5>Website Creation</h5>
+                    <p class="card-text">
+					You may not be a web designer, 
+					that´s where MJcode come in. We facilitate the process 
+					of creating a website, making it accessible to everyone. 
+					you can easily launch a professional website.
+					</p>
+                  </div>
+                </div>
+              </div>
+			</div>
+
+
+			<div class="col-md-6 card mb-6">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+				<i class="fas fa-tv img-responsive"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5>Dekstop App</h5>
+                    <p class="card-text">
+					You may not be a Programer
+					that´s where MJcode come in. We facilitate the process 
+					of creating your Dekstop APP, making it accessible to everyone. 
+				
+					</p>
+                  </div>
+                </div>
+              </div>
+			</div>
+
+
+			<div class="col-md-6 card mb-6">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+				<i class="fas fa-mobile-alt img-responsive"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5>Mobile App</h5>
+                    <p>
+						We facilitate the process 
+					of creating a Mobile APP, making it accessible to everyone. 
+					</p>
+                  </div>
+                </div>
+              </div>
+			</div>
+
+
+			<div class="col-md-6 card mb-6">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+				<i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5>Personal Blog</h5>
+                    <p class="card-text">
+					You may not be a web designer or a programer, 
+					that´s where MJcode come in. We facilitate the process 
+					of creating Personal Blog, making it accessible to everyone. 
+					you can easily launch a personal Blog.
+					</p>
+                  </div>
+                </div>
+              </div>
+			</div>
+
+
+
+		
+</div>
+</div>
+
 		<!--service section -->
-		<div class="service-box ">   
-			<div class="service-icon">
-			<i class="fa fa-desktop" aria-hidden="true"></i>
-			</div>
-			<div class="service-title">Web Design</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
-				suscipit! Et neque quas aspernatur nemo fugit!
-			</div>
-		</div>
 		
-		<div class="service-box">   
-			<div class="service-icon">
-			<i class="fas fa-sitemap"></i>
-			</div>
-			<div class="service-title">Criaçao de Landing page</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
-				suscipit! Et neque quas aspernatur nemo fugit!
-			</div>
-		</div>
-
-		
-
-		<div class="service-box">   
-			<div class="service-icon">
-				<i class="fas fa-database"></i>
-			</div>
-			<div class="service-title">Criaçao de Sites Ecommerce</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
-				suscipit! Et neque quas aspernatur nemo fugit!
-			</div>
-		</div>
-
-		<div class="service-box">   
-			<div class="service-icon">
-				<i class="fas fa-database iconei"></i>
-			</div>
-			<div class="service-title">Criaçao de App Mobile</div>
-
-			<div class="service-desc">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Odit voluptatum neque explicabo distinctio labore assumenda,
-				tempore eligendi saepe sed eos, adipisci rerum reiciendis 
-				suscipit! Et neque quas aspernatur nemo fugit!
-			</div>
-		</div>
-
-			
-		
-
-
-</div>
-</div>
-
 
 
 	<!--======Jumbotron======-->
@@ -469,7 +488,7 @@ if (isset($_POST['Send'])) {
 		<div  class="col-12 narrow text-center" data-aos="flip-left"
 		     data-aos-easing="ease-out-cubic"
 		     data-aos-duration="1000" data-aos-offset="300">
-			<p class="lead">On sait depuis longtemps que travailler avec du texte lisible </p>
+			<p class="lead"></p>
 			<a class="btn btn-secondary btn-md" href="#contact">Work with us</a>
 		</div>
 
@@ -617,5 +636,6 @@ if (isset($_POST['Send'])) {
 <script src="js/index.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src="https://kit.fontawesome.com/691f1a5fce.js" crossorigin="anonymous"></script>
 </body>
 </html>
