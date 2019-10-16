@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $senha = "";
-$database = "MJCode";
+$database = "MJcode";
 $connect = mysqli_connect($host, $user, $senha, $database) or
 die("Error to connect.");
 mysqli_query($connect, "SET NAMES 'utf8'");

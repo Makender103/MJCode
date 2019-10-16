@@ -104,7 +104,7 @@ body{
 }
 
 .navbar-nav li{
-  padding-right: .7rem:
+  padding-right: .7rem; 
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -124,18 +124,31 @@ body{
 }
 .carousel-caption{
   position:absolute;
-  top:60%;
+  top:50%;
   transform:translatey(-50%);
   padding-bottom: -500px;
 }
 
 .carousel-caption h1{
   font-size:500%;
+  padding: 50px;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 1px 1px 15px #000;
 }
 .carousel-caption h1 span{
   color:#8B0000;
+}
+
+.carousel-caption h3{
+  font-family: 'Kaushan Script', cursive;
+  font-size:200%;
+  font-weight:500;
+  text-shadow: 1px 1px 15px #000;
+  padding-bottom: 3rem;
+}
+
+.carousel-caption .btn {
+
 }
 
 
@@ -176,15 +189,9 @@ body{
             border-right-color: transparent;
   
       }
+
 }
-}
-.carousel-caption h3{
-  font-family: 'Kaushan Script', cursive;
-  font-size:200%;
-  font-weight:500;
-  text-shadow: 1px 1px 15px #000;
-  padding-bottom: 3rem;
-}
+
 
 
 .btn-danger{
@@ -200,46 +207,23 @@ body{
 
 /*==========About page=============*/
 .py-5 {
-    padding-top: .1rem!important;
+    padding-top: .5rem!important;
 }
 
-.about-pictures{
-  position: relative;
-}
+
 
 .about-image{
-  position: absolute;
-  width:150px;
+  width:60%;
   transition: all 2s ease;
   opacity: 0.9;
-}
-
-.img-1{
-  left:0%;
-  top:0%;
-}
-.img-2{
-  left:20%;
-  top:20%;
-  z-index:10;
-}
-.img-3{
-  left:40%;
-  top:45%;
-  z-index:20;
-}
-.img-4{
-  left:40%;
-  top:0%;
-}
-.img-5{
-  left:0%;
-  top:45%;
+border: 3px solid #8B0000;
+margin-left: 20%;
+margin-top: 10%;
 }
 .about-image:hover{
-  outline:10px solid #d3325f;
-  outline-offset:0.8rem;
-  transform: scale(1.3) rotate(20deg);
+  outline:8px solid #505962;
+  outline-offset:0.1rem;
+  transform: scale(1.2) rotate(16deg);
   z-index:30;
   opacity: 1;
 }
@@ -285,53 +269,45 @@ body{
   font-size: 1.1rem;
 }
 
-
-/*==========Counter up=============*/
-.midde{
+/**Service Section **/
+.service-section{
+  padding: 60px 10px;
   width: 100%;
-  /*transform: translateY(-50%);*/
-    background-image: url('img/computers.png');
+  overflow:hidden;
+  cursor: pointer;
+}
 
+.card:hover{
+  border: 1px solid red;
+  background-color: #505962;
+  color: #ebebeb
 }
-.counting-sec{
-  padding: 40px 0;
-  width: 100%;
 
-}
-.inner-width{
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-}
-.col{
-  flex: 1;
+.fa-laptop-code, .fa-tv, .fa-mobile-alt, .fa-chalkboard-teacher{
+  font-size: 600%;
   text-align: center;
-  padding: 20px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.col i{
-  font-size: 40px;
-  color: #333;
+  position: absolute;
+  padding: 5%;
+  top: 3%; 
+  left: 30%;
+  padding-bottom:1%; 
 }
 
-.col span{
-  text-align: center;
-  padding: 20px;
-  color: #808080;
-  text-transform: uppercase;
+.card-body   {
+  padding: 15%;
+  opacity: 1;
+}
 
-}
-.num{
-  font-size: 40px;
-  margin: 20px 0;
-}
-.facount{
-  color: #8B0000;
-}
+
+
+
+
+
+
 
 
 /**==Service===*/
+
 .narrow{
   width:75%;
   margin:2.15rem auto;
@@ -404,9 +380,14 @@ body{
 }
 
 .box .content h3{
-  font-size: 38px;
-  color:#8B0000;
-  font-weight:400;padding-top: 3rem;
+  font-size: 25px;
+  background-color: #8B0000;
+  color: #ebebeb;
+  font-weight:100;
+  padding: 0.5rem;
+  text-transform:capitalize;
+  text-align: center;
+  border-radius: 20%;
 }
 .box .content p{
   font-size: 18px;
@@ -415,14 +396,14 @@ body{
 }
 .box .content .btnD{
   border:none;
-  background: #fe1b70;
+  background: #505962;
   color: #fff;
-  font-size: 10px 20px;
+  font-size: 20px 20px;
   font-weight: 700;
   transition:.5s;
 }
 .box .content .btnD:hover{
-background: #DEB887;
+background: #1bfeeb;
 color:#696969;
 }
 
@@ -436,7 +417,6 @@ color:#696969;
 h3.heading{
   font-size:1.9rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 1.9rem;
 }
 
@@ -476,7 +456,7 @@ h3.heading{
   color:black;
 }
 .card-img-top{
- border-radius: 50%;
+ /*border-radius: 0%;*/
 
 }
 #bor{
@@ -493,15 +473,14 @@ font-family: 'Permanent Marker', cursive;
 
 .card-img-top {
   transition: transform .2s; /* Animation */
-  width: 250px;
-  height: 200px
+ width: 50%;
+  height: 50%;
 }
 
 .card-img-top:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
-  padding-left: 15px;
 }
 /***Contack */
 .fixed-b{
@@ -512,6 +491,13 @@ font-family: 'Permanent Marker', cursive;
   background-color: rgba(0,0,0,0.75);
   color: white;
   padding:1rem 2rem;
+}
+
+.b-contact{
+position: absolute;
+right: 3%;
+top: 78%;
+border: 1px solid #8B0000;
 }
 
 .fixed-background h3{
@@ -566,71 +552,6 @@ transform: scale(1.5);
 padding-left: 8px;
 }
 
-/***======= Service Section*======*/
-.single-service{
-  border:1px solid #ebebeb;
-  text-align: center;
-  background: lightgray;
-}
-.service-bg{
-  height: 200px;
-  position:relative;
-}
-.service-bg-1{
-  width:100%;
-  background: url("img/img4.jpeg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-.service-bg-2{
-  width:100%;
-  background: url("img/img5.jpeg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-.service-bg-3{
-  width:100%;
-  background: url("img/img3.jpg");
-  -webkit-background-size:cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.service-bg h2{
-  color:#fff;
-  background: tomato;
-  border:1px solid tomato;
-  font-size: 17px;
-  font-weight: 700;
-  padding:15px;
-  position:absolute;
-  left:8%;
-  width: 84%;
-  margin: 0;
-  bottom: -25px;
-  border-radius:50px;
-  letter-spacing:2px;
-}
-.single-service:hover .service-bg h2{
-  background-color: #fff;
-  transition:.9s;
-  color:tomato;
-}
-.service-text{
-  padding:50px 30px 20px;
-  font-size: 15px;
-  font-weight:400;
-}
-.service-text p:last-child{
-  margin: 0;
-  line-height: 1.8;
-}
-
-.span{
-  color: red;
-}
 
 
 /****footer**/
@@ -667,53 +588,21 @@ small{
 
 
 /*-----Media queries--*/
-@media (max-width: 767px){
-  .caption h1{
-    font-size:2.3rem;
-    letter-spacing: .15rem;
-    padding-bottom:.5rem;
-  }
-  .caption h4{
-    font-size: 1.2rem;
-    padding-bottom: 1.6rem;
-  }
-
-  .btn-lg{
-    padding-left: .6rem 1.3rem;
-    font-size: 1.1rem;
-  }
-  .narrow h1{
-    font-size:1.5;
-  }
-  .clients img{
-    max-width: 50%;
-    display:block;
-    margin:0 auto;
-  }
-
-  /***service**/
-  .single-service{
-    margin-top: 30px;
-  }
-  .service-bg h2{
-    font-size:13px;
-  }
-
-  .social {
-    font-size: 200%;
-  }
-}
-
-
 
 /****** Media queries my caroussel*******/
 @media (max-width: 992px){
-  .carousel-indicators {
-    display:none;
+  .carousel-caption{
+    top:45%;
+  }
+
+  .service-box{
+    max-width: 45%;
   }
 }
 
-@media (max-width:768px){
+
+@media (max-width: 768px){
+
   .carousel-caption{
     top:45%;
   }
@@ -730,24 +619,48 @@ small{
 
   .carousel-caption .btn {
     font-size:95%;
-    padding:8px 14px;
+    padding:20px 14px;
   }
   .carousel-indicators {
     display:none;
   }
 
-  .social{
+  .btn-lg{
+    padding-left: .6rem 1.3rem;
+    font-size: 1.1rem;
+  }
+  .narrow h1{
+    font-size:1.5;
+  }
+  .clients img{
+    max-width: 50%;
+    display:block;
+    margin:0 auto;
+  }
+
+  /***service**/
+
+  .service-box{
+    max-width:50%;
+  }
+  .single-service{
+    margin-top: 30px;
+  }
+  .service-bg h2{
+    font-size:13px;
+  }
+
+  .social {
     font-size: 200%;
   }
-
-  .social svg.svg-inline--fa{
-    font-size: 300%;
-  }
-
-
+  
+    .social svg.svg-inline--fa{
+      font-size: 300%;
+    }
+  
 }
 
-@media (max-width:650px){
+@media (max-width:655px){
 
   .carousel-caption{
     top:70%;
@@ -791,12 +704,11 @@ small{
   .social svg.svg-inline--fa{
     font-size: 60%;
   }
-}
 
-@media (max-width:450px){
+@media (max-width:576px){
 
   .carousel-caption{
-    top:46%;
+    top:50%;
   }
 
   .carousel-caption h1{
@@ -837,7 +749,26 @@ small{
     transition:.5s;
   }
 }
+@media (max-width:480px){
+  .card-img-top {
+    transition: transform .2s; /* Animation */
+   width: 90%;
+    height: 90%;
+  }
 
+  .service-box{
+    max-width: 100%;
+
+  }
+
+  .b-contact{
+    position: absolute;
+    right: 9%;
+    top: 78%;
+    border: 1px solid #8B0000;
+    }
+
+}
 
 
 
