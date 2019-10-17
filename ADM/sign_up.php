@@ -87,7 +87,7 @@ if (isset($_POST['create_adm'])) {
 	<link rel="stylesheet" href="css/fixed.css">
 
 
-	<title>MJTECH - ADM login Form</title>
+	<title>MJcode - ADM</title>
 	<link rel="icon" href="img/logo.png">
 </head>
 

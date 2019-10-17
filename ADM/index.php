@@ -43,7 +43,7 @@ include_once'../Includes/connection.php';
 	<link rel="stylesheet" href="css/fixed.css">
 
 
-	<title>MJTECH - ADM login Form</title>
+	<title>MJcode- ADM</title>
 	<link rel="icon" href="img/logheader.png">
 
 
@@ -58,7 +58,7 @@ include_once'../Includes/connection.php';
 
 
               <form id="log" action="" method="post" enctype="multipart/form-data">
-              <h1>MJTEC-ADM</h1>
+              <h1>MJcode-ADM</h1>
               <img class="card-img-top img img-responsive" src="img/t4.gif">
 
                 <div class="form-group">
