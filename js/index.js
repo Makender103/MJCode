@@ -1,11 +1,21 @@
+$(document).ready(function(){
+	AOS.init({
+		duration:200,
+	});
+	
+	setTimeout(function(){
+		$('.loader-wrapper').fadeToggle();
+	
+	}, 650);
 
-AOS.init({
-	duration:200,
-});
+	$('#delete').mouseover(function(){
+		alert("Teste");
+	});
+		
 
-setTimeout(function(){
-	$('.loader-wrapper').fadeToggle();
+})
 
-}, 650);
+
+
 
 

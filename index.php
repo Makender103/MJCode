@@ -9,7 +9,16 @@ if (isset($_POST['Send'])) {
     $email = trim(addslashes($_POST['email']));
     $message = trim(addslashes($_POST['message']));
     $service = (trim(addslashes($_POST['service'])))? trim(addslashes($_POST['service'])):'B';
-    $date = date("Y-m-d h:i:s");
+	$date = date("Y-m-d h:i:s");
+	
+	//Get client IP
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+		$ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+		$ip = $_SERVER['REMOTE_ADDR'];
+	}
 
     if (empty($name)) {
         $NameErr = 'Please enter your name';
@@ -34,7 +43,7 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
-        $query = "INSERT INTO mjcode_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
+        $query = "INSERT INTO mjcode_Contact(name, email, message, service, clock, Cliente_IP) VALUES ('$name','$email', '$message','$service', '$date', '$ip')";
         $res = mysqli_query($connect, $query);
         if ($res) {
         	$mes = "<div class='alert alert-success' role='alert' id='Status_mes'>
