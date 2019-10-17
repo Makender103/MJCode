@@ -7,7 +7,8 @@ CREATE TABLE mjcode_Contact (
   email VARCHAR(50) NOT NULL, 
   message TEXT, 
   service ENUM('W','M','B'),
-  clock date
+  clock date,
+  Cliente_IP VARCHAR(15)
   
 );
 

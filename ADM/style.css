@@ -40,3 +40,10 @@ label{
   font-size: 20px;
   color: white;
 }
+
+#pagination{
+  list-style-type:none;
+  display:flex;
+  justify-content: center;
+}
+

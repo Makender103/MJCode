@@ -16,8 +16,7 @@ if(!isset($_GET['page'])){
   $i = $_GET['page'];
 }
 $first_page = ($i - 1) * $each_page;
-    
-    
+      
 $sql = "SELECT  id, name, email, message, service, clock, Cliente_IP FROM mjcode_Contact LIMIT " .$first_page. ','.$each_page;
 $res = mysqli_query($connect, $sql);
 
@@ -116,31 +115,20 @@ $res = mysqli_query($connect, $sql);
               <td><?php echo $value['clock']?></td>
               <td><?php echo $value['Cliente_IP']?></td>
               <td>
-                <a href="" id="delete">Delete</a>
+                <button type="button" class="btn btn-danger" id="delete">Delete</button>
               </td>
             </tr>
-          <?php }
-                // $total_page = "SELECT  COUNT(id) AS total_page FROM mjcode_Contact";
-                // $response_page = mysqli_query($connect, $sql);
-
-                // $row_pg = mysqli_fetch_assoc($response_page);
-                // //echo $row_pg['total_page'];
-
-             
-          ?>
+          <?php }?>
         </tbody>
       </table> 
+      <ul class="pagination" id="pagination">
       <?php
-          
-          
           for($i = 1; $i<= $page_total; $i++){
-            echo '<a href="adm.php?page=' .$i. '">' .$i. '</a>';
+           echo '<li class="page-item"><a class="page-link" href="adm.php?page=' .$i. '">' .$i. '</a></li>';
           }
-     
-      ?>   
+      ?>  
+      </ul> 
       </div>
-      
-
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
