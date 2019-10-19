@@ -5,6 +5,7 @@ session_start();
 $each_page = 8;
 
 $sql = "SELECT  id, name, email, message, service, clock, Cliente_IP FROM mjcode_Contact";
+//$sql .= "ORDER BY id DESC";
 $response = mysqli_query($connect, $sql);
 
 $number_of_result = mysqli_num_rows($response);
@@ -16,8 +17,16 @@ if(!isset($_GET['page'])){
   $i = $_GET['page'];
 }
 $first_page = ($i - 1) * $each_page;
-      
-$sql = "SELECT  id, name, email, message, service, clock, Cliente_IP FROM mjcode_Contact LIMIT " .$first_page. ','.$each_page;
+
+if(isset($_GET['order']) && isset($_GET['sort'])){
+  $ORDER = "ORDER BY {$_GET['order']} {$_GET['sort']}";
+}
+else{
+  $ORDER = "ORDER BY id ASC";
+}
+$sql = "SELECT  id, name, email, message, service, clock, Cliente_IP FROM mjcode_Contact ".$ORDER." LIMIT " .$first_page. ','.$each_page;
+
+//$sql .= "ORDER BY id DESC";
 $res = mysqli_query($connect, $sql);
 
 ?>
@@ -83,18 +92,29 @@ $res = mysqli_query($connect, $sql);
         <thead class="thead-dark">
           <tr>
 
-            <th scope="col">ID</th>
-            <th scope="col">NAME</th>
-            <th scope="col">EMAIL</th>
-            <th scope="col">SERVICE</th>
-             <th scope="col">MESSAGE</th>
-             <th scope="col">DATE</th>
-             <th scope="col">IP ADDRESS</th>
+            <th scope="col">ID<a href="?order=id&sort=asc">&and;</a><a href="?order=id&sort=desc">&or;</a></th>
+            <th scope="col">NAME<a href="?order=name&sort=asc">&and;</a><a href="?order=name&sort=desc">&or;</a></th>
+            <th scope="col">EMAIL<a href="?order=email&sort=asc">&and;</a><a href="?order=email&sort=desc">&or;</a></th>
+            <th scope="col">SERVICE<a href="?order=service&sort=asc">&and;</a><a href="?order=service&sort=desc">&or;</a></th>
+             <th scope="col">MESSAGE<a href="?order=message&sort=asc">&and;</a><a href="?order=message&sort=desc">&or;</a></th>
+             <th scope="col">DATE<a href="?order=clock&sort=asc">&and;</a><a href="?order=clock&sort=desc">&or;</a></th>
+             <th scope="col">IP<a href="?order=CLiente_IP&sort=asc">&and;</a><a href="?order=CLiente_IP&sort=desc">&or;</a></th>
             <th scope="col">OPTION</th>
           </tr>
         </thead>
         <tbody>
-          <?php while($value = mysqli_fetch_array($res)) {
+        <?php if( mysqli_num_rows($res) == 0){
+				?>
+				<tr>
+					<td colspan="4">
+                <div class="alert alert-info">
+                    Ther is no Contact
+              </div>
+        </td>
+				</tr>
+				<?php	
+		  	}else
+             while($value = mysqli_fetch_array($res)) {
               $service = $value['service'];
               if ($service=='W') {
                   $service = 'Web';
