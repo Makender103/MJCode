@@ -107,15 +107,15 @@ $res = mysqli_query($connect, $sql);
                 } 
             ?>
             <tr>
-              <td><?php echo $value['id']?></td>
-              <td><?php echo $value['name']?></td>
-              <td><?php echo $value['email']?></td>
+              <td><?= $value['id']?></td>
+              <td><?= $value['name']?></td>
+              <td><?= $value['email']?></td>
               <td><?= $service ?></td>
-              <td><?php echo $value['message']?></td>
-              <td><?php echo $value['clock']?></td>
-              <td><?php echo $value['Cliente_IP']?></td>
+              <td><?= $value['message']?></td>
+              <td><?= $value['clock']?></td>
+              <td><?= $value['Cliente_IP']?></td>
               <td>
-                <button type="button" class="btn btn-danger" id="delete">Delete</button>
+                <a href="delete.php?id=<?=$value['id']?>"><button type="button" class="btn btn-danger"  onclick="return deleteConfirm()">Delete</button></a>
               </td>
             </tr>
           <?php }?>
