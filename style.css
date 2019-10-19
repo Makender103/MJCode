@@ -147,10 +147,6 @@ body{
   padding-bottom: 3rem;
 }
 
-.carousel-caption .btn {
-
-}
-
 
 .line {
     
@@ -454,10 +450,6 @@ h3.heading{
 }
 .modal-body{
   color:black;
-}
-.card-img-top{
- /*border-radius: 0%;*/
-
 }
 #bor{
   border-right: none;

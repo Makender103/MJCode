@@ -517,18 +517,13 @@ if (isset($_POST['Send'])) {
 				?>
 	<div class="row">
 			<div class="col-lg-6">
-				<form action="" method="post" enctype="multipart/form-data">
+				<form action="" method="post" enctype="multipart/form-data" id="contactValidation">
 
 						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
 						<h4>+(55) 49 99966-9170</h4>
 							<div class="tex-form">
 								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?= isset($name)? $name: '' ;?>">
-								<span class="span">
-                                    <?php
-                                        if($Count_NameErr > 0) {
-                                            echo $NameErr;
-                                        }
-								    ?>
+								<span class="error" id="name">
                                 </span><br><br>
                                 <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?= isset($email)? $email: '' ;?>">
                                 <span class="span">
@@ -634,6 +629,7 @@ if (isset($_POST['Send'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/validation.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <script src="https://kit.fontawesome.com/691f1a5fce.js" crossorigin="anonymous"></script>
