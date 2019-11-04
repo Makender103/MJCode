@@ -9,16 +9,7 @@ if (isset($_POST['Send'])) {
     $email = trim(addslashes($_POST['email']));
     $message = trim(addslashes($_POST['message']));
     $service = (trim(addslashes($_POST['service'])))? trim(addslashes($_POST['service'])):'B';
-	$date = date("Y-m-d h:i:s");
-	
-	//Get client IP
-	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-		$ip = $_SERVER['HTTP_CLIENT_IP'];
-	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-	} else {
-		$ip = $_SERVER['REMOTE_ADDR'];
-	}
+    $date = date("Y-m-d h:i:s");
 
     if (empty($name)) {
         $NameErr = 'Please enter your name';
@@ -43,7 +34,7 @@ if (isset($_POST['Send'])) {
     }
 
     if($CountMessErr == 0 && $Count_emailErr == 0 && $Count_NameErr == 0){
-        $query = "INSERT INTO mjcode_Contact(name, email, message, service, clock, Cliente_IP) VALUES ('$name','$email', '$message','$service', '$date', '$ip')";
+        $query = "INSERT INTO mjcode_Contact(name, email, message, service, clock) VALUES ('$name','$email', '$message','$service', '$date')";
         $res = mysqli_query($connect, $query);
         if ($res) {
         	$mes = "<div class='alert alert-success' role='alert' id='Status_mes'>
@@ -197,11 +188,12 @@ if (isset($_POST['Send'])) {
 			<div class="heading-underline"></div>
 		</div>
 
-		<div class="card mb-6 col-md-6">
+		<a href="service.html#Web"><div class="card mb-6 col-md-6">
               <div class="row no-gutters">
                 <div class="col-md-4">
 				<i class="fas fa-laptop-code img-responsive text-center"></i>
-                </div>
+				</div>
+				
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5>Website Creation</h5>
@@ -213,11 +205,11 @@ if (isset($_POST['Send'])) {
 					</p>
                   </div>
                 </div>
-              </div>
+              </div></a>
 			</div>
 
 
-			<div class="col-md-6 card mb-6">
+				<a href="service.html#App"><div class="col-md-6 card mb-6">
               <div class="row no-gutters">
                 <div class="col-md-4">
 				<i class="fas fa-tv img-responsive"></i>
@@ -233,11 +225,11 @@ if (isset($_POST['Send'])) {
 					</p>
                   </div>
                 </div>
-              </div>
+              </div></a>
 			</div>
 
 
-			<div class="col-md-6 card mb-6">
+			<a href="service.html#mobile"><div class="col-md-6 card mb-6">
               <div class="row no-gutters">
                 <div class="col-md-4">
 				<i class="fas fa-mobile-alt img-responsive"></i>
@@ -251,11 +243,11 @@ if (isset($_POST['Send'])) {
 					</p>
                   </div>
                 </div>
-              </div>
+              </div></a>
 			</div>
 
 
-			<div class="col-md-6 card mb-6">
+			<a href="#"><div class="col-md-6 card mb-6">
               <div class="row no-gutters">
                 <div class="col-md-4">
 				<i class="fas fa-chalkboard-teacher"></i>
@@ -271,7 +263,7 @@ if (isset($_POST['Send'])) {
 					</p>
                   </div>
                 </div>
-              </div>
+              </div> </a>
 			</div>
 
 
@@ -289,9 +281,9 @@ if (isset($_POST['Send'])) {
 <section class="offset"  >
 			<div class="row text-center ">
 
-			<div  class="col-12 narrow text-center" >
-			<a class="btn btn-secondary btn-md" href="#contact">Hire us</a>
-		</div>
+					<div  class="col-12 narrow text-center" >
+					<a class="btn btn-secondary btn-md" href="#contact">Hire us</a>
+					</div>
 
 
 
@@ -302,7 +294,7 @@ if (isset($_POST['Send'])) {
 
 <!--team  Section-->
 <div id="ourteam" class="offset">
-	<div class="fixed-background">
+	<div class="ourteam">
 		<div class="row dark text-center">
 
 			<div class="col-12">
@@ -321,7 +313,7 @@ if (isset($_POST['Send'])) {
 				<h4 class="card-title text-center">Marc-kender</h4>
 
 
-				<button type="button" class="btn btn-danger pull-left" data-toggle="modal" data-target="#marc">
+				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#marc">
 					 	Profile
 				</button>
 			</div>
@@ -335,7 +327,7 @@ if (isset($_POST['Send'])) {
 		<h5 class="modal-title" id="exampleModalCenterTitle">Marc-kender R. Jean-Charles</h5>
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
-		</button>
+		</button>	
 	</div>
 
 	<div class="modal-body">
@@ -510,107 +502,103 @@ if (isset($_POST['Send'])) {
 	<div class="fixed-background">
 		<div class="dark text-center">
 
-			<div class="col-12">
-				<h3 class="heading">How Can we help u ?</h3>
-				<div class="heading-underline"></div>
+		<div class="col-12">
+				<h3 class="heading"> Where to find us?</h3>
+                <div class="heading-underline"></div>
+                <p class="heading-title">Space Reserved for you to contact us</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+            <a href="#"><div class="contact-box">
+
+            <div class="box-icon">
+                <img src="img/icon-perso.png" alt="">
+            </div>
+
+            <h3>
+                <a href="#" title="Orçamento de site" data-toggle="modal" data-target="#Orçamento-Modal"><b>Website Budget</b></a>
+                
+            </h3>
+            <span class="cont-text">Contact us to request 
+                                        your <b>site</b> budget</span>
+            </div>
 			</div>
-			<!--contact form-->
-	<div class="container contact_form">
-		<?php 
-					if (isset($mes)) {
-						echo $mes;
-						echo "<meta http-equiv='refresh' content='2'>";
-	
-					}
-					else{
-				?>
-	<div class="row">
-			<div class="col-lg-6">
-				<form action="" method="post" enctype="multipart/form-data" id="contactValidation">
+			
+			<!-- MOdal budget -->
 
-						<i class="fa fa-phone fa-2x fa-fw" aria-hidden="true"></i>
-						<h4>+(55) 49 99966-9170</h4>
-							<div class="tex-form">
-								<input type="text" class="form-control" placeholder="Your Name" name="name" value="<?= isset($name)? $name: '' ;?>">
-								<span class="error" id="name">
-                                </span><br><br>
-                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email" value="<?= isset($email)? $email: '' ;?>">
-                                <span class="span">
-                                    <?php
-                                    if($Count_emailErr > 0) {
-                                        echo $emailErr;
-                                    }
-
-                                    ?>
-                                </span><br>
-							</div>
-
-						<div class="checkbox">
-								<div class="radio">
-									<label>
-										<input type="radio" name="service"  value="W">     Web<br>
-									</label>
-
-									<label>
-										<input type="radio" name="service"  value="M">    Mobile<br>
-									</label>
-
-									<label>
-										<input type="radio" name="service"  value="B" checked="">    Both
-									</label>
-								</div>
-						</div>
-
-			</div>
-
-
-			<div class="col-lg-6">
-				<i class="fas fa-envelope fa-2x fa-fw" aria-hidden="true"></i>
-				<h4>contact@mjcode.net</h4>
-				<div class="form-group">
-					 <textarea class="form-control" rows="5" placeholder="share your project with us" name="message" value="<?= isset($message)? $message: '' ;?>"></textarea>
-                    <span class="span">
-                                    <?php
-                                    if($CountMessErr > 0) {
-                                        echo $messErr;
-                                    }
-
-                                    ?>
-                                </span><br>
-                </div>
-				<input type="submit" class="btn btn-success b-contact pull-right " name="Send"></br>
-
-			</div>
-
-
-
-
-			<div class="fixed-wrap"><!--landing-->
-				<div class="fixed-b">
-				</div>
-			</div>
-
-	</div>
+			<!-- Modal -->
+<div class="modal fade" id="Orçamento-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Faça o seu Orçamento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
-</form><?php }?>
 
-	<div class="col-12">
-		<h3 class="heading">From Social Media</h3>
-		<div class="heading-underline"></div>
-	</div>
 
-	<div class="container-fluid padding">
-	<div class="row text-center padding">
-	<div class="col-12 social padding">
-		<a href="https://www.facebook.com/MJcode13/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		<a href="https://www.twitter.com/mjcode13" target="_blank"><i class="fab fa-twitter-square"></i></a>
-		<a href="https://www.instagram.com/mjcode16/" target="_blank"><i class="fab fa-instagram"></i></a>
-		<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+            <a href="#"><div class="contact-box">
 
-	</div>
-	</div>
-	</div>
+            <div class="box-icon">
+                <img src="img/contato-icone.png" alt="">
+            </div>
 
+            <h3>
+                <a href="#" title="Orçamento de site" target="_blank"><b>Contact</b></a>
+                
+            </h3>
+            <span class="cont-text">
+                    <b>Commercial:</b>
+                    <i class="fa fa-whatsapp" style="margin-right:2px;"></i>
+                    <a href="https://api.whatsapp.com/send?phone=5549988859041&text=sua%20mensagem"
+                             title="Fale Conosco por WhatsApp" target="_blank">
+                        (49) 988859041</a>
+                        <br>
+                    <i class="fa fa-map-marker" style="margin-right:2px;"></i>
+                    <a href="#" title="Portal do Cliente" target="_blank">Customer Portal</a>
+                                        </span>
+            </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+            <a href="#"><div class="contact-box">
+
+            <div class="box-icon">
+                <img src="img/curtir-icon.png" alt="">
+            </div>
+
+            <h3>
+                <a href="#" title="Orçamento de site" target="_blank">Like and<b> share</b></a>
+                
+            </h3>
+            <ul class="contact-ul">
+                <li>
+                        <a href="https://www.facebook.com/MJcode13/" title="MJcode's Facebook" target="_blank">
+                            <img alt="MJcode's Facebook" class="cont im" src="img/ico-facebook.png" data-was-processed="true"></a>
+                </li>
+
+            </ul>
+            </div>
+            </div>
+
+
+        </div>
+            
 
 </div>
 </div>
@@ -634,8 +622,6 @@ if (isset($_POST['Send'])) {
 <!--- Script Source Files -->
 <!--counter up-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/validation.js"></script>
