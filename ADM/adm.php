@@ -106,7 +106,7 @@ $res = mysqli_query($connect, $sql);
         <?php if( mysqli_num_rows($res) == 0){
 				?>
 				<tr>
-					<td colspan="4">
+					<td colspan="8" class="text-center" >
                 <div class="alert alert-info">
                     Ther is no Contact
               </div>
