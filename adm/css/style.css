@@ -1,0 +1,107 @@
+.navbar {
+    margin: 0;
+    border-radius: 0;
+}
+
+.navbar-toggle {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    background-color: #ecf0f5;
+    min-height: calc(100vh - 52px);
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.menu {
+    width: 0px;
+    border-top: 1px solid #333;
+    background-color: #222;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: width .5s;
+}
+
+.menu.menu-open {
+    width: 300px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.menu ul li.active {
+    background-color: #080808;
+}
+
+.menu ul li a {
+    display: block;
+    color: #9d9d9d;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.menu ul li:hover a,
+.menu ul li.active a {
+    color: white
+}
+
+#form-container {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#form-boxadd {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#form-box input {
+    font-size: small;
+}
+
+#form-box {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#addAdm {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+#welcome {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-style: italic;
+}
+
+#clients {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
