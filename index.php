@@ -122,7 +122,7 @@ if (isset($_POST['Send'])) {
 									<button type="button" class="btn btn-outline-light btn-lg animated zoomIn"
 									style="animation-delay:1s">Nos Services
 								</button></a>
-								<a href="#contact"><button type="button" class="btn btn-danger btn-lg animated zoomIn"
+								<a href="#contact"><button type="button" data-toggle="modal" data-target="#Contact-Modal" class="btn btn-danger btn-lg animated zoomIn"
 									style="animation-delay:2s">Nous contacter
 								</button></a>
 							</div>
@@ -144,7 +144,7 @@ if (isset($_POST['Send'])) {
 								<h1 class="display-2 animated zoomIn" style="animation-delay:1s">La  <span>Pour vous</span></h1>
 								<h3 class="animated fadeInLeft" style="animation-delay:2s">Développement d'applications Dekstop et Android</h3>
 								<a href="#service
-								"><button type="button" class="btn btn-outline-light btn-lg animated bounceInLeft" style="animation-delay:3s">Nos Service
+								"><button type="button" data-toggle="modal" data-target="#Orçamento-Modal" class="btn btn-outline-light btn-lg animated bounceInLeft" style="animation-delay:3s">Faire un Devis
 								</button></a>
 
 							</div>
@@ -173,8 +173,8 @@ personnalisé et adapté à vos besoins.
 qu'ils veulent "implémenter / mettre à jour / ajouter"
 ou simplement refactorisé pour une meilleure architecture.
 nous travaillons également avec des équipes qui recherchent 
-une personne possédant nos compétences en la matière. </ p> </h5>
-					<a class="btn btn-secondary my-4 text-capitalize pull-right" href="#about" target="">En savoir plus</a>
+une personne possédant nos compétences en la matière. </p> </h5>
+					<a class="btn btn-secondary my-4 text-capitalize pull-right" href="#project" target="">Notre Expertise</a>
 		</div>
 
 		<div class="col-md-4 offset ">
@@ -525,7 +525,7 @@ une personne possédant nos compétences en la matière. </ p> </h5>
         <div class="row">
 
             <div class="col-xs-12 col-sm-4 col-md-4">
-            <a href="#" title="Demander un devis" data-toggle="modal" data-target="#Orçamento-Modal"><div class="contact-box">
+            <a href="#devi" title="Demander un devis" data-toggle="modal" data-target="#Orçamento-Modal"><div class="contact-box">
 
             <div class="box-icon">
                 <img src="img/icon-perso.png" alt="">
@@ -535,8 +535,8 @@ une personne possédant nos compétences en la matière. </ p> </h5>
                 <b>Budget du site</b></a>
                 
             </h3>
-            <span class="cont-text">Contactez-nous pour demander le budget de votre website
-                                         votre <b> site </b></span>
+            <span class="cont-text">Contactez-nous pour demander le budget de
+				votre <b> site </b></span>
 </div>
 </div>
 
@@ -654,13 +654,10 @@ une personne possédant nos compétences en la matière. </ p> </h5>
             </h3>
             <span class="cont-text">
                     <b>Commercial:</b>
-                    <i class="fa fa-whatsapp" style="margin-right:2px;"></i>
+                    <i class="fab fa-whatsapp" style="margin-right:2px;"></i>
                     <a href="https://api.whatsapp.com/send?phone=5549988859041&text=sua%20mensagem"
                              title="Fale Conosco por WhatsApp" target="_blank">
                         (+55)49 84090209 </a>
-                        <br>
-                    <i class="fa fa-map-marker" style="margin-right:2px;"></i>
-                    <a href="#" title="Portail clients" target="_blank">Portail clients</a>
                                         </span>
             </div>
 			</div>

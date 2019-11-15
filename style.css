@@ -357,6 +357,9 @@ height: 90%;
   color: #8B0000;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+h2 .dixplay-3{
+  font-size: 10%;
+}
 
 
 .servicesec{
@@ -577,6 +580,12 @@ border: 1px solid #8B0000;
   color: #FFFFFF;
   font-size: 100%;
   }
+
+  .contact-box  a:hover{
+    color:#fff;
+    font-size: 100%;
+    text-decoration: none;
+    }
   
   li{
     list-style: none;
@@ -585,6 +594,7 @@ border: 1px solid #8B0000;
       float: right;
       margin-right: 10px;
   }
+  
 
 
 
@@ -601,8 +611,8 @@ footer{
 
 hr.socket{
   width: 30%;
-  border-top: 1rem solid #8B0000;
-  margin-top: 2rem;
+  border-top: 0.5rem solid #8B0000;
+  margin-top: 0.5rem;
 }
 small{
   color: #8B0000;
@@ -687,6 +697,8 @@ small{
       font-size: 300%;
     }
 
+
+
 @media (max-width:655px){
 
   .carousel-caption{
@@ -767,7 +779,7 @@ small{
     font-size: 50%;
   }
   .display-3{
-    font-size:250%;
+    font-size:200%;
     text-transform: uppercase;
   }
 
