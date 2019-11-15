@@ -656,7 +656,7 @@ une personne possédant nos compétences en la matière. </p> </h5>
                     <b>Commercial:</b>
                     <i class="fab fa-whatsapp" style="margin-right:2px;"></i>
                     <a href="https://api.whatsapp.com/send?phone=5549988859041&text=sua%20mensagem"
-                             title="Fale Conosco por WhatsApp" target="_blank">
+                             title="Nous parler Via WhatsApp" target="_blank">
                         (+55)49 84090209 </a>
                                         </span>
             </div>
