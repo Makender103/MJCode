@@ -267,18 +267,25 @@ margin-top: 10%;
 
 /**Service Section **/
 .service-section{
-  padding: 20px 10px;
+  padding: 10px 10px;
   width: 100%;
   overflow:hidden;
   cursor: pointer;
 }
+
+
+.card:hover{
+  color: #ebebeb;
+    background-color: #696969;
+  }
+  
 .card a{
   color: #505962;
+  text-decoration: none;
 }
 
 .card a:hover{
-  color: #ebebeb;
-  text-decoration: none;
+  color: #fff;
 }
 
 .fa-laptop-code, .fa-tv, .fa-mobile-alt, .fa-chalkboard-teacher{
@@ -292,21 +299,16 @@ margin-top: 10%;
 }
 
 .card-body   {
-  padding: 15%;
+  padding: 10%;
   opacity: 1;
 }
 
-.card-body h3{ }
 
 
 
 
 
-
-
-
-
-/**==Service===*/
+/**==Service-Section===*/
 
 .narrow{
   width:75%;

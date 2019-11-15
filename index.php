@@ -609,6 +609,16 @@ une personne possédant nos compétences en la matière. </ p> </h5>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="input-group mb-3">
+			<select class="custom-select" id="inputGroupSelect01">
+					<option selected>Nos Services</option>
+					<option value="1">Creation de site internet</option>
+					<option value="2">Creation d´application Mobile</option>
+					<option value="3">Creation d´application Dekstop</option>
+			</select>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12">
 			<div class="input-group">
 				<div class="input-group-prepend">
 					<span class="input-group-text">Comment voulez-vous le site?</span>
@@ -617,15 +627,6 @@ une personne possédant nos compétences en la matière. </ p> </h5>
 			</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-12 col-md-12">
-			<div class="input-group mb-3">
-			<select class="custom-select" id="inputGroupSelect01">
-					<option selected>CAtegorie de site</option>
-					<option value="1">site institutionnel</option>
-					<option value="2">site d`information</option>
-					<option value="3">E-commerce</option>
-			</select>
-			</div>
 			<div class="modal-footer">
 			<button type="button" class="btn btn-success" data-dismiss="modal">Envoyer</button>
 			</div>
@@ -682,25 +683,15 @@ une personne possédant nos compétences en la matière. </ p> </h5>
 			<label for="inputname" class="pull-left">Nom</label>
 				<input type="text" class="form-control" placeholder="Votre Nom ou Nom de l`entreprise">
 			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6">
-			<label for="phone" class="pull-left">Telephone Mobile:</label>
-				<input type="tel"  class="form-control" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="exemple: XX-XXXX-XXXX" required>
-			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
 			<label for="exampleInputEmail1" class="pull-left">Adresse Email:</label>
 				<input type="text" class="form-control" placeholder="example: xxxxxxxxxx@mjcode.net">
 			</div>
 
-			
-
-			
-
 			<div class="col-xs-6 col-sm-6 col-md-6">
-			<label class="container">j`ai deja travaille avec-vous?
-				<input type="checkbox" checked="checked">
-				<span class="checkmark"></span>
-				</label>
+			<label for="phone" class="pull-left">Telephone Mobile:</label>
+				<input type="tel"  class="form-control" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="exemple: XX-XXXX-XXXX" required>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
