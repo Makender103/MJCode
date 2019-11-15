@@ -222,7 +222,7 @@ margin-top: 10%;
   z-index:30;
   opacity: 1;
 }
-.about-pictures:hover .about-image:not(:hover){
+.about-image:hover .about-image:not(:hover){
   opacity: 0.5;
 }
 
@@ -262,11 +262,12 @@ margin-top: 10%;
   border-radius: 0;
   padding-left: .6rem 1.3rem;
   font-size: 1.1rem;
+  width: 50%;
 }
 
 /**Service Section **/
 .service-section{
-  padding: 60px 10px;
+  padding: 20px 10px;
   width: 100%;
   overflow:hidden;
   cursor: pointer;
@@ -276,8 +277,6 @@ margin-top: 10%;
 }
 
 .card a:hover{
-  border: 1px solid red;
-  background-color: #505962;
   color: #ebebeb;
   text-decoration: none;
 }
@@ -296,6 +295,8 @@ margin-top: 10%;
   padding: 15%;
   opacity: 1;
 }
+
+.card-body h3{ }
 
 
 
@@ -331,10 +332,6 @@ margin-top: 10%;
   background-color: #189582;
   border-color: #189582;
 }
-.btn-lg{
-  text-transform: uppercase;
-  font-weight: 60px
-}
 
 /*Service/Page*/
 
@@ -359,11 +356,7 @@ height: 90%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.btn-lg{
-  text-align: center;
-  margin-left: 15%;
-  width: 30%;
-}
+
 .servicesec{
   margin-top: 5%;
   background-color: dimgray;
@@ -590,6 +583,10 @@ border: 1px solid #8B0000;
       float: right;
       margin-right: 10px;
   }
+
+
+
+
 /****footer**/
 footer{
   background-color:rgba(0,0,0,0.3)!important;;
@@ -607,6 +604,10 @@ hr.socket{
 }
 small{
   color: #8B0000;
+}
+
+.alert{
+  text-align: center;
 }
 
 
@@ -650,7 +651,7 @@ small{
   .carousel-caption h3{
     font-size:140%;
     font-weight:400;
-    padding-bottom: .2rem;
+    padding-bottom: .1rem;
   }
 
   .carousel-caption .btn {
@@ -661,17 +662,7 @@ small{
     display:none;
   }
 
-  .btn-lg{
-    padding-left: .6rem 1.3rem;
-    font-size: 1.1rem;
-  }
-  .narrow h1{
-    font-size:1.5;
-  }
-  .clients img{
-    max-width: 50%;
-    display:block;
-    margin:0 auto;
+
   }
 
   /***service**/
@@ -693,8 +684,6 @@ small{
     .social svg.svg-inline--fa{
       font-size: 300%;
     }
-  
-}
 
 @media (max-width:655px){
 
@@ -744,11 +733,11 @@ small{
 @media (max-width:576px){
 
   .carousel-caption{
-    top:50%;
+    top:30%;
   }
 
   .carousel-caption h1{
-    font-size:180%;
+    font-size:100%;
   }
 
   .carousel-caption h3{
@@ -786,11 +775,7 @@ small{
   }
 }
 @media (max-width:480px){
-  .card-img-top {
-    transition: transform .2s; /* Animation */
-   width: 90%;
-    height: 90%;
-  }
+ 
 
   .service-box{
     max-width: 100%;
