@@ -75,10 +75,9 @@ if (isset($_POST['create_adm'])) {
       }
   }
 }
-
 ?>
-        <div class="col-md-3 col-sm-3 col-xs-12"></div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-2 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
                         <?php
                           if (isset($mes)) {
                              echo $mes;
@@ -106,7 +105,7 @@ if (isset($_POST['create_adm'])) {
                             <label>Password</label>
                             <input type="password" class="form-control" placeholder="Create your Password" name="password_adm">
                           </div>
-                          <button class="btn btn-success btn-block" type="submit" name="create_adm">Sign Up</button>
+                          <button class="btn btn-success btn-block" type="submit" name="create_adm">Add</button>
 
 
                         </form><?php }?>

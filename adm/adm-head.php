@@ -9,7 +9,7 @@
 	<title>::MJcode - ADM</title>
 	
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <s<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>cript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,21 +26,34 @@
 				<a class="navbar-brand" href="#">Administrator</a>
 			</div>
 			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-				<?php
-				session_start();
-            if(isset($_SESSION['username']) && isset($_SESSION['name'])){
-              $variavel = $_SESSION['name'] ;
-              $variavel.= "  <a href='logout.php'><ion-icon name='return-right' id='addAdm'></ion-icon></a>";
-            }else{
-				$variavel = "<a href='logout.php' id='addAdm'>Log In</a>";
-			}
-       		?>
-        <a href="#" id="addAdm"><?=$variavel?></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<ul class="nav nvbar navbar-right">
+					<?php
+					session_start();
+					if(isset($_SESSION['username']) && isset($_SESSION['name'])){
+					$variavel = $_SESSION['name'] ;
+					$variavel.= " <a href='logout.php'><ion-icon name='return-right' id='addAdm'></ion-icon></a>";
+					}else{
+						$variavel = "<a href='logout.php' id='addAdm'>Log In</a>";
+					}
+					?>
+				<div class="dropdown">
+				<a href="#" id="addAdm" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$variavel?></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="profile.php">Profil</a>
+				<a class="dropdown-item" href="#">Settings</a>
+				<a class="dropdown-item" href="#"></a>
+			</div>
+        </div>
 				</ul>
+
 			</div>
 		</div>
 	</nav>
+       
+          
+
+
+	<!--  -->
 	<div class="main">
 		<div class="menu">
 			<ul>

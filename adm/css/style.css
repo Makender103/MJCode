@@ -2,6 +2,11 @@
     margin: 0;
     border-radius: 0;
 }
+.navbar-right{
+    position: absolute;
+    right:3%;
+    top: 25%;
+}
 
 .navbar-toggle {
     display: inline-block;
@@ -105,3 +110,76 @@
     font-weight: bold;
     font-style: italic;
 }
+
+/* DROPDOWN */
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .1em solid;
+    border-right: .1em solid transparent;
+    border-bottom: 0;
+    border-left: .1em solid transparent;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 99%;
+    left: 10%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .15rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(211, 211, 211,0.9);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+  }
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .3rem 1rem;
+    clear: both;
+    font-weight: 350;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  
+
+  /* PROFIL */
+
+  .profile-card{
+      width: 400px;
+      margin: auto;
+      background: blanchedalmond;
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+  }
+
+  .image-container{
+      position: relative;
+  }
+
+  .main-container{
+      padding: 5%;
+  }
