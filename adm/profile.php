@@ -9,18 +9,22 @@ include 'adm-head.php';
     </div>
 
     <div class="col-xs-12 col-sm-3 col-md-3">
-    <div class="card" style="width: 18rem;">
-  <img src="../img/marck.png" class="card-img-top img-responsive" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Makender103</h5>
-    <p class="card-text">`` I have a dream´´</p>
+
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="../img/marck.png" alt="Marck" style="width:100%">
+  <h1>Marckender</h1>
+  <p class="title">Programmer, Designer</p>
+  <p>Front-End Dev</p>
+  <p>PYTHON, C ,JAVASCRIPT</p>
+  <div class="p-f" style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="">Marckender R JN Ch</li>
-    <li class="">makender103@mjcode.net</li>
-    <li class="list-group-item">49 988859041</li>
-    <li>C, Python , JavaScript</li>
-  </ul>
+<p><button class="p-b">Contact</button></p>
 </div>
     </div>
 
