@@ -56,7 +56,8 @@
 
 .menu ul li:hover a,
 .menu ul li.active a {
-    color: white
+    color: white;
+    text-decoration: none;
 }
 
 #form-container {

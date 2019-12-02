@@ -92,10 +92,12 @@ body{
 }
 /****** Navigation--*/
 .navbar {
+  
   font-weight:700;
   font-size: .9rem;
   letter-spacing:.1rem;
   background: rgba(0,0,0,0.6) !important;
+  transition: .5s;
 }
 
 .navbar-brand img{
@@ -446,6 +448,12 @@ width:60%;
   opacity:.5s;
   transform:translateY(-40px);
 }
+
+
+
+
+
+
 .box .content{
   position: absolute;
   bottom:0;
@@ -596,6 +604,27 @@ border: 1px solid #8B0000;
   }
   
 
+  /* scroll to top */
+  .fa-chevron-up{
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  font-size: 45px;
+  color:#505962;
+  padding: 7px 10px;
+  border-radius: 50%;
+  background: #8B0000;
+  cursor:pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease-in-out;
+}
+
+.fa-chevron-up:hover{
+  background: #505962;
+  color: #8B0000;
+  transition: .5s;
+}
 
 
 

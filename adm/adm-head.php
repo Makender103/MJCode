@@ -58,7 +58,7 @@
 	<div class="main">
 		<div class="menu">
 			<ul>
-				<li class="active"><a href="#">Panel</a></li>
+				<li class="active"><a href="adm.php">DashBoard</a></li>
 				<li><a href="addAdm.php">Add Adm</a></li>
 				<li><a href="clients.php">Clients</a></li>
 				<li><a href="../index.php">Go to site</a></li>

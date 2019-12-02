@@ -69,7 +69,7 @@ if (isset($_POST['Send'])) {
 
 	<!--Navigation-->
 	<div id="home">
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	
   <a class="navbar-brand" href="index.php"><img src="img/logom.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -737,11 +737,14 @@ une personne possédant nos compétences en la matière. </p> </h5>
 
 
         </div>
-            
+		
 
 </div>
 </div>
 </div>
+<!--  -->
+<i class="fas fa-chevron-up"></i>
+
 
 <!--end-->
 

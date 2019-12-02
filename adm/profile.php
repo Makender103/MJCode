@@ -10,7 +10,7 @@ include 'adm-head.php';
 
     <div class="col-xs-12 col-sm-3 col-md-3">
 
-<h2 style="text-align:center">User Profile Card</h2>
+<h2 style="text-align:center">Profile Card</h2>
 
 <div class="card">
   <img src="../img/marck.png" alt="Marck" style="width:100%">
