@@ -34,11 +34,4 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-	$(window).on('scroll',function(){
-		$('.navbar').toggleClasss('hide',$(window).scrollTop()>0);
-	})
-})
-
-
 
